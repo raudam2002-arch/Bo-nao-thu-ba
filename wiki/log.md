@@ -19,4 +19,4 @@ Người dùng thêm thư mục tài liệu khoá học IPS 16 vào `raw/ghi-chu
 - Cập nhật `wiki/gioi-thieu-thay-long.md` — thêm tên đầy đủ (Phạm Thành Long), quy mô follower, phong cách giảng dạy
 - Cập nhật `wiki/index.md` — mục Nhân vật và Khái niệm
 
-Còn nợ: câu hỏi "16 bước bán hàng" (khung Jay Abraham viết salepage mà thầy Long dùng) — người dùng chưa xác nhận có muốn tạo trang `wiki/khai-niem/16-buoc-ban-hang-jay-abraham.md` hay không.
+Câu hỏi "16 bước bán hàng" (khung Jay Abraham viết salepage mà thầy Long dùng) — người dùng quyết định **không cần** tạo trang riêng cho khung này. Không tạo `wiki/khai-niem/16-buoc-ban-hang-jay-abraham.md`.
