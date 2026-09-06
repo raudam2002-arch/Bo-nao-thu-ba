@@ -9,7 +9,7 @@ Danh mục toàn bộ trang trong wiki, cập nhật mỗi lần ingest nguồn 
 
 ## Nhân vật
 
-- [[gioi-thieu-thay-long]] — Thầy Long là ai, phong cách giảng dạy, các chủ đề chính. *(chưa có nội dung, chờ nguồn đầu tiên)*
+- [[gioi-thieu-thay-long]] — Thầy Phạm Thành Long: sáng lập Đào Tạo Doanh Nhân, chương trình IPS, phong cách giảng dạy mạnh mẽ/trao giá trị trước. Cập nhật 2026-09-06.
 
 ## Chủ đề (`chu-de/`)
 
@@ -17,7 +17,8 @@ Danh mục toàn bộ trang trong wiki, cập nhật mỗi lần ingest nguồn 
 
 ## Khái niệm (`khai-niem/`)
 
-*(chưa có trang nào)*
+- [[khai-niem/video-marketing-28-ngay|video-marketing-28-ngay]] — chương trình 28 ngày xây thói quen làm video + phễu bán hàng qua video. Cập nhật 2026-09-06.
+- [[khai-niem/khung-kich-ban-video-6-buoc|khung-kich-ban-video-6-buoc]] — công thức 6 bước dựng nội dung một video, kèm công thức 15 giây đầu. Cập nhật 2026-09-06.
 
 ## Hỏi-đáp đã ingest (`hoi-dap/`)
 
