@@ -1,0 +1,23 @@
+{
+  "skill_name": "content-viral",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Viết bài viral Facebook từ chất liệu này: một nữ chủ shop thời trang online 34 tuổi, doanh thu vài tỷ một năm, nhìn ngoài rất thành công. Nhưng ba năm rồi chị không về quê ăn Tết, vì sợ bị họ hàng hỏi 'bao giờ lấy chồng'. Đến khoá học của tôi, lúc làm bài tập chị khóc khi nhận ra mình không hề bận — mình đang trốn chính gia đình mình. Lên bài cho tôi.",
+      "expected_output": "Bài FB long-form ~2000-3000 chữ theo 7 khúc, hook dừng scroll, học viên ẩn danh, gọi tên khung tư duy PTL, câu hỏi tấm gương in đậm cuối bài, giọng tâm sự tôi-bạn, không bullet/emoji/Hán Việt sáo. Kèm ghi chú kỹ thuật.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Chấm bài này giúp tôi xem có viral không rồi sửa: 'Trong cuộc sống, ai cũng sẽ gặp khó khăn. Điều quan trọng là chúng ta phải luôn cố gắng và không bao giờ bỏ cuộc. Hôm nay tôi muốn chia sẻ với các bạn câu chuyện về một học viên của tôi đã vượt qua nghịch cảnh để thành công. Bạn ấy đã rất nỗ lực và cuối cùng đã đạt được kết quả tốt. Hy vọng câu chuyện này sẽ truyền cảm hứng cho các bạn. Hãy luôn tin vào bản thân mình nhé!'",
+      "expected_output": "Bảng chấm 5 điểm checklist viral, chỉ ra khúc yếu nhất (hook nhạt, không tấm gương, cảm xúc man mác, toàn khái quát), 1 câu chẩn đoán gốc vì sao không lan, và viết lại đúng khúc yếu (2-3 phương án).",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Làm cho tôi một bài short đăng fanpage tối nay, chủ đề: người ta cứ trì hoãn vì chờ 'đúng thời điểm', mà đúng thời điểm thì không bao giờ tới. Dưới 500 chữ.",
+      "expected_output": "Bài FB short <500 chữ, nén 3 khúc (hook + insight + câu hỏi tấm gương), giọng PTL, một câu hỏi mở in đậm cuối.",
+      "files": []
+    }
+  ]
+}

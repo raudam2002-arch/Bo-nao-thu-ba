@@ -1,0 +1,1588 @@
+Split: 12 train, 8 test (holdout=0.4)
+
+============================================================
+Iteration 1/5
+Description: Viết và tối ưu nội dung lan truyền (viral) cho thương hiệu Phạm Thành Long trên Facebook/blog/video — bài câu chuyện cảm xúc, bài insight, ngụ ngôn kinh doanh, post câu tương tác. Áp dụng bộ xương 7 khúc đã được data fanpage thực chứng (8 bài viral nhất 90 ngày, trung bình 4.626 react/bài, đỉnh 11k react) + 6 đòn bẩy lan truyền (đồng tiền xã hội, cú kích, cảm xúc bốc cao, công khai, giá trị thực, câu chuyện) + câu hỏi tấm gương cuối bài + giọng văn signature PTL. Có 2 chế độ — VIẾT bài viral từ chất liệu thô (concept, câu chuyện học viên, trải nghiệm, tin tức, sản phẩm), và CHẤM/audit một bài có sẵn theo checklist viral rồi viết lại khúc yếu. Dùng skill này BẤT CỨ KHI NÀO anh Long muốn "viết bài viral", "bài đăng fanpage", "content lan truyền", "bài câu tương tác / share / comment", "làm bài Facebook cảm động", "biến chất liệu này thành bài viral", "vì sao bài này không lan", "chấm bài này có viral không", "tăng tương tác", hoặc đưa một chất liệu thô (concept page, câu chuyện, trải nghiệm, tin) và nói "lên bài cho tôi", "làm thành post", "viết cái gì đó cho fanpage tối nay". KHÔNG dùng cho — case học viên LTVM cụ thể (dùng ltvm-storytelling, chuyên sâu hơn về khung case khoá LTVM), sale page bán hàng trực tiếp (dùng salepage-warrior-plus), kịch bản video dài 5-15 phút (dùng video-marketing-28-ngay), truyện chương hồi Gã Ăn Mày Giàu Có (dùng ga-an-may-giau-co).
+============================================================
+Train: 18/36 correct, precision=100% recall=0% accuracy=50% (76.5s)
+  [FAIL] rate=0/3 expected=True: biến câu chuyện ông chủ quán phở 20 năm chuyển sang bán onli
+  [FAIL] rate=0/3 expected=True: viết caption facebook tăng comment cho tấm hình anh đứng lớp
+  [FAIL] rate=0/3 expected=True: anh cần 1 cái post ngắn câu tương tác cho page, chủ đề trì h
+  [FAIL] rate=0/3 expected=True: anh có concept page về '5 cái chết tư duy', lên cho anh 1 bà
+  [FAIL] rate=0/3 expected=True: viết giúp anh bài facebook thật cảm động về 1 anh doanh nhân
+  [FAIL] rate=0/3 expected=True: làm cho anh cái hook 3 giây mở đầu reel về chủ đề mất hết ti
+  [PASS] rate=0/3 expected=False: viết bài LTVM kể về chị Quyên học viên khoá Lập Trình Vận Mệ
+  [PASS] rate=0/3 expected=False: soạn module giáo án chuẩn hoá về khái niệm Sự gán nghĩa để đ
+  [PASS] rate=0/3 expected=False: viết cho anh công thức nấu món bún bò Huế chuẩn vị đăng blog
+  [PASS] rate=0/3 expected=False: viết sale page bán khoá Bán Hàng Thành Công full 16 bước, có
+  [PASS] rate=0/3 expected=False: đọc 500 comment YouTube này rồi tổng hợp hồ sơ khách hàng pe
+  [PASS] rate=0/3 expected=False: viết kịch bản phim ngắn dọc 60 tập về một founder bị cướp cô
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: hồi xưa bố anh hay hất mâm cơm, anh muốn viết thành 1 bài ch
+  [FAIL] rate=0/3 expected=True: chấm bài dưới đây xem có viral không nhé, xong viết lại cái 
+  [PASS] rate=0/3 expected=False: viết tiếp chương 52 truyện Gã Ăn Mày Giàu Có, lần này gã gặp
+  [FAIL] rate=0/3 expected=True: anh muốn 1 bài storytelling chạm tới mấy chủ doanh nghiệp đa
+  [FAIL] rate=0/3 expected=True: bài này anh đăng mãi mà chả ai share, xem hộ vì sao nó không
+  [PASS] rate=0/3 expected=False: cắt cái file transcript SRT khoá Eagle Camp này thành chunk 
+  [PASS] rate=0/3 expected=False: lên kịch bản video marketing 12 phút giới thiệu hệ thống IPS
+  [PASS] rate=0/3 expected=False: viết bài thuyết trình 30 giây giới thiệu nghề luật sư sở hữu
+
+Improving description...
+Proposed (17.3s): Dùng skill này khi anh Long muốn viết hoặc tối ưu nội dung lan truyền (viral) cho thương hiệu Phạm Thành Long trên Facebook, fanpage, blog hay reel — bất kỳ bài đăng nào nhắm tới nhiều react, share, comment. Bao gồm: viết bài Facebook kể chuyện chạm cảm xúc (rơi nước mắt, tỉnh ngộ, doanh nhân/gia đình), caption tăng tương tác, post ngắn câu comment/share theo chủ đề tư duy–kinh doanh, ngụ ngôn/case kinh doanh, bài insight, hook 3 giây mở đầu reel; biến chất liệu thô (concept page, câu chuyện học viên, trải nghiệm, tin tức, sản phẩm) thành bài đăng; và chấm/audit "bài này có viral không, vì sao không lan, sửa giúp". Kích hoạt cả khi anh đưa chất liệu rồi nói "lên bài cho tôi", "làm thành post fanpage tối nay", "viết cảm động/câu tương tác".
+
+KHÔNG dùng cho: case học viên khoá LTVM (ltvm-storytelling), sale page chốt bán (salepage-warrior-plus), kịch bản video dài 5–15 phút (video-marketing-28-ngay), truyện chương hồi Gã Ăn Mày Giàu Có (ga-an-may-giau-co).
+
+============================================================
+Iteration 2/5
+Description: Dùng skill này khi anh Long muốn viết hoặc tối ưu nội dung lan truyền (viral) cho thương hiệu Phạm Thành Long trên Facebook, fanpage, blog hay reel — bất kỳ bài đăng nào nhắm tới nhiều react, share, comment. Bao gồm: viết bài Facebook kể chuyện chạm cảm xúc (rơi nước mắt, tỉnh ngộ, doanh nhân/gia đình), caption tăng tương tác, post ngắn câu comment/share theo chủ đề tư duy–kinh doanh, ngụ ngôn/case kinh doanh, bài insight, hook 3 giây mở đầu reel; biến chất liệu thô (concept page, câu chuyện học viên, trải nghiệm, tin tức, sản phẩm) thành bài đăng; và chấm/audit "bài này có viral không, vì sao không lan, sửa giúp". Kích hoạt cả khi anh đưa chất liệu rồi nói "lên bài cho tôi", "làm thành post fanpage tối nay", "viết cảm động/câu tương tác".
+
+KHÔNG dùng cho: case học viên khoá LTVM (ltvm-storytelling), sale page chốt bán (salepage-warrior-plus), kịch bản video dài 5–15 phút (video-marketing-28-ngay), truyện chương hồi Gã Ăn Mày Giàu Có (ga-an-may-giau-co).
+============================================================
+Train: 18/36 correct, precision=100% recall=0% accuracy=50% (74.8s)
+  [FAIL] rate=0/3 expected=True: biến câu chuyện ông chủ quán phở 20 năm chuyển sang bán onli
+  [FAIL] rate=0/3 expected=True: viết caption facebook tăng comment cho tấm hình anh đứng lớp
+  [FAIL] rate=0/3 expected=True: anh có concept page về '5 cái chết tư duy', lên cho anh 1 bà
+  [FAIL] rate=0/3 expected=True: anh cần 1 cái post ngắn câu tương tác cho page, chủ đề trì h
+  [FAIL] rate=0/3 expected=True: làm cho anh cái hook 3 giây mở đầu reel về chủ đề mất hết ti
+  [FAIL] rate=0/3 expected=True: viết giúp anh bài facebook thật cảm động về 1 anh doanh nhân
+  [PASS] rate=0/3 expected=False: viết bài LTVM kể về chị Quyên học viên khoá Lập Trình Vận Mệ
+  [PASS] rate=0/3 expected=False: soạn module giáo án chuẩn hoá về khái niệm Sự gán nghĩa để đ
+  [PASS] rate=0/3 expected=False: viết cho anh công thức nấu món bún bò Huế chuẩn vị đăng blog
+  [PASS] rate=0/3 expected=False: viết sale page bán khoá Bán Hàng Thành Công full 16 bước, có
+  [PASS] rate=0/3 expected=False: viết kịch bản phim ngắn dọc 60 tập về một founder bị cướp cô
+  [PASS] rate=0/3 expected=False: đọc 500 comment YouTube này rồi tổng hợp hồ sơ khách hàng pe
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: hồi xưa bố anh hay hất mâm cơm, anh muốn viết thành 1 bài ch
+  [FAIL] rate=0/3 expected=True: chấm bài dưới đây xem có viral không nhé, xong viết lại cái 
+  [FAIL] rate=0/3 expected=True: anh muốn 1 bài storytelling chạm tới mấy chủ doanh nghiệp đa
+  [FAIL] rate=0/3 expected=True: bài này anh đăng mãi mà chả ai share, xem hộ vì sao nó không
+  [PASS] rate=0/3 expected=False: viết tiếp chương 52 truyện Gã Ăn Mày Giàu Có, lần này gã gặp
+  [PASS] rate=0/3 expected=False: cắt cái file transcript SRT khoá Eagle Camp này thành chunk 
+  [PASS] rate=0/3 expected=False: lên kịch bản video marketing 12 phút giới thiệu hệ thống IPS
+  [PASS] rate=0/3 expected=False: viết bài thuyết trình 30 giây giới thiệu nghề luật sư sở hữu
+
+Improving description...
+Proposed (21.5s): Dùng skill này để viết hoặc sửa bài đăng mạng xã hội cho thương hiệu Phạm Thành Long — mọi nội dung nhắm tới nhiều react, share, comment trên Facebook, fanpage, blog, reel.
+
+Kích hoạt khi anh Long muốn:
+- Viết bài Facebook kể chuyện chạm cảm xúc (rơi nước mắt, tỉnh ngộ, doanh nhân bỏ bê gia đình, mất hết rồi đứng dậy)
+- Viết caption tăng comment, post ngắn câu tương tác/share theo chủ đề tư duy–kinh doanh
+- Viết hook 3 giây mở đầu reel
+- Biến chất liệu thô (concept page, câu chuyện, trải nghiệm, tin tức, sản phẩm) thành bài đăng fanpage viral — "lên bài cho tôi", "làm thành post tối nay"
+- Chấm/sửa bài: "bài này có viral không", "vì sao không lan", "sửa giúp"
+
+KHÔNG dùng cho: case học viên khoá LTVM (ltvm-storytelling), sale page chốt bán (salepage-warrior-plus), kịch bản video dài (video-marketing-28-ngay), truyện chương hồi Gã Ăn Mày Giàu Có (ga-an-may-giau-co).
+
+============================================================
+Iteration 3/5
+Description: Dùng skill này để viết hoặc sửa bài đăng mạng xã hội cho thương hiệu Phạm Thành Long — mọi nội dung nhắm tới nhiều react, share, comment trên Facebook, fanpage, blog, reel.
+
+Kích hoạt khi anh Long muốn:
+- Viết bài Facebook kể chuyện chạm cảm xúc (rơi nước mắt, tỉnh ngộ, doanh nhân bỏ bê gia đình, mất hết rồi đứng dậy)
+- Viết caption tăng comment, post ngắn câu tương tác/share theo chủ đề tư duy–kinh doanh
+- Viết hook 3 giây mở đầu reel
+- Biến chất liệu thô (concept page, câu chuyện, trải nghiệm, tin tức, sản phẩm) thành bài đăng fanpage viral — "lên bài cho tôi", "làm thành post tối nay"
+- Chấm/sửa bài: "bài này có viral không", "vì sao không lan", "sửa giúp"
+
+KHÔNG dùng cho: case học viên khoá LTVM (ltvm-storytelling), sale page chốt bán (salepage-warrior-plus), kịch bản video dài (video-marketing-28-ngay), truyện chương hồi Gã Ăn Mày Giàu Có (ga-an-may-giau-co).
+============================================================
+Train: 18/36 correct, precision=100% recall=0% accuracy=50% (66.8s)
+  [FAIL] rate=0/3 expected=True: anh cần 1 cái post ngắn câu tương tác cho page, chủ đề trì h
+  [FAIL] rate=0/3 expected=True: viết caption facebook tăng comment cho tấm hình anh đứng lớp
+  [FAIL] rate=0/3 expected=True: biến câu chuyện ông chủ quán phở 20 năm chuyển sang bán onli
+  [FAIL] rate=0/3 expected=True: viết giúp anh bài facebook thật cảm động về 1 anh doanh nhân
+  [FAIL] rate=0/3 expected=True: anh có concept page về '5 cái chết tư duy', lên cho anh 1 bà
+  [PASS] rate=0/3 expected=False: viết bài LTVM kể về chị Quyên học viên khoá Lập Trình Vận Mệ
+  [PASS] rate=0/3 expected=False: soạn module giáo án chuẩn hoá về khái niệm Sự gán nghĩa để đ
+  [FAIL] rate=0/3 expected=True: làm cho anh cái hook 3 giây mở đầu reel về chủ đề mất hết ti
+  [PASS] rate=0/3 expected=False: viết cho anh công thức nấu món bún bò Huế chuẩn vị đăng blog
+  [PASS] rate=0/3 expected=False: viết sale page bán khoá Bán Hàng Thành Công full 16 bước, có
+  [PASS] rate=0/3 expected=False: viết kịch bản phim ngắn dọc 60 tập về một founder bị cướp cô
+  [PASS] rate=0/3 expected=False: đọc 500 comment YouTube này rồi tổng hợp hồ sơ khách hàng pe
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: hồi xưa bố anh hay hất mâm cơm, anh muốn viết thành 1 bài ch
+  [FAIL] rate=0/3 expected=True: chấm bài dưới đây xem có viral không nhé, xong viết lại cái 
+  [PASS] rate=0/3 expected=False: viết tiếp chương 52 truyện Gã Ăn Mày Giàu Có, lần này gã gặp
+  [FAIL] rate=0/3 expected=True: anh muốn 1 bài storytelling chạm tới mấy chủ doanh nghiệp đa
+  [FAIL] rate=0/3 expected=True: bài này anh đăng mãi mà chả ai share, xem hộ vì sao nó không
+  [PASS] rate=0/3 expected=False: lên kịch bản video marketing 12 phút giới thiệu hệ thống IPS
+  [PASS] rate=0/3 expected=False: cắt cái file transcript SRT khoá Eagle Camp này thành chunk 
+  [PASS] rate=0/3 expected=False: viết bài thuyết trình 30 giây giới thiệu nghề luật sư sở hữu
+
+Improving description...
+Proposed (24.3s): Viết bài đăng mạng xã hội cho thương hiệu Phạm Thành Long với mục tiêu nhiều react, share, comment. Đây là skill mặc định cho mọi yêu cầu "viết bài Facebook", "viết caption", "post fanpage", "bài cho page tối nay", "hook mở đầu reel", "post câu tương tác", "bài viral", "bài cảm động/chạm cảm xúc".
+
+Dùng khi anh Long muốn:
+- Viết bài Facebook kể chuyện chạm cảm xúc (doanh nhân tỉnh ngộ, bỏ bê gia đình, mất hết rồi đứng dậy, kéo nước mắt người đọc).
+- Viết caption tăng comment, post ngắn câu tương tác/share theo chủ đề tư duy–kinh doanh.
+- Viết hook 3 giây mở đầu reel.
+- Biến chất liệu thô (concept page, câu chuyện, trải nghiệm, tin, sản phẩm) thành bài fanpage viral.
+- Chấm/sửa bài: "có viral không", "vì sao không lan", "sửa giúp".
+
+KHÔNG dùng cho: case học viên LTVM (ltvm-storytelling), sale page chốt bán (salepage-warrior-plus), kịch bản video dài (video-marketing-28-ngay), truyện chương hồi Gã Ăn Mày Giàu Có (ga-an-may-giau-co).
+
+============================================================
+Iteration 4/5
+Description: Viết bài đăng mạng xã hội cho thương hiệu Phạm Thành Long với mục tiêu nhiều react, share, comment. Đây là skill mặc định cho mọi yêu cầu "viết bài Facebook", "viết caption", "post fanpage", "bài cho page tối nay", "hook mở đầu reel", "post câu tương tác", "bài viral", "bài cảm động/chạm cảm xúc".
+
+Dùng khi anh Long muốn:
+- Viết bài Facebook kể chuyện chạm cảm xúc (doanh nhân tỉnh ngộ, bỏ bê gia đình, mất hết rồi đứng dậy, kéo nước mắt người đọc).
+- Viết caption tăng comment, post ngắn câu tương tác/share theo chủ đề tư duy–kinh doanh.
+- Viết hook 3 giây mở đầu reel.
+- Biến chất liệu thô (concept page, câu chuyện, trải nghiệm, tin, sản phẩm) thành bài fanpage viral.
+- Chấm/sửa bài: "có viral không", "vì sao không lan", "sửa giúp".
+
+KHÔNG dùng cho: case học viên LTVM (ltvm-storytelling), sale page chốt bán (salepage-warrior-plus), kịch bản video dài (video-marketing-28-ngay), truyện chương hồi Gã Ăn Mày Giàu Có (ga-an-may-giau-co).
+============================================================
+Train: 18/36 correct, precision=100% recall=0% accuracy=50% (68.5s)
+  [FAIL] rate=0/3 expected=True: biến câu chuyện ông chủ quán phở 20 năm chuyển sang bán onli
+  [FAIL] rate=0/3 expected=True: anh cần 1 cái post ngắn câu tương tác cho page, chủ đề trì h
+  [FAIL] rate=0/3 expected=True: viết caption facebook tăng comment cho tấm hình anh đứng lớp
+  [FAIL] rate=0/3 expected=True: anh có concept page về '5 cái chết tư duy', lên cho anh 1 bà
+  [FAIL] rate=0/3 expected=True: viết giúp anh bài facebook thật cảm động về 1 anh doanh nhân
+  [PASS] rate=0/3 expected=False: soạn module giáo án chuẩn hoá về khái niệm Sự gán nghĩa để đ
+  [PASS] rate=0/3 expected=False: viết bài LTVM kể về chị Quyên học viên khoá Lập Trình Vận Mệ
+  [FAIL] rate=0/3 expected=True: làm cho anh cái hook 3 giây mở đầu reel về chủ đề mất hết ti
+  [PASS] rate=0/3 expected=False: viết cho anh công thức nấu món bún bò Huế chuẩn vị đăng blog
+  [PASS] rate=0/3 expected=False: viết sale page bán khoá Bán Hàng Thành Công full 16 bước, có
+  [PASS] rate=0/3 expected=False: viết kịch bản phim ngắn dọc 60 tập về một founder bị cướp cô
+  [PASS] rate=0/3 expected=False: đọc 500 comment YouTube này rồi tổng hợp hồ sơ khách hàng pe
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: hồi xưa bố anh hay hất mâm cơm, anh muốn viết thành 1 bài ch
+  [FAIL] rate=0/3 expected=True: chấm bài dưới đây xem có viral không nhé, xong viết lại cái 
+  [PASS] rate=0/3 expected=False: viết tiếp chương 52 truyện Gã Ăn Mày Giàu Có, lần này gã gặp
+  [FAIL] rate=0/3 expected=True: bài này anh đăng mãi mà chả ai share, xem hộ vì sao nó không
+  [FAIL] rate=0/3 expected=True: anh muốn 1 bài storytelling chạm tới mấy chủ doanh nghiệp đa
+  [PASS] rate=0/3 expected=False: cắt cái file transcript SRT khoá Eagle Camp này thành chunk 
+  [PASS] rate=0/3 expected=False: lên kịch bản video marketing 12 phút giới thiệu hệ thống IPS
+  [PASS] rate=0/3 expected=False: viết bài thuyết trình 30 giây giới thiệu nghề luật sư sở hữu
+
+Improving description...
+Proposed (28.3s): Dùng để VIẾT hoặc SỬA một bài đăng cụ thể, sẵn sàng copy lên Facebook/fanpage/reel cho thương hiệu Phạm Thành Long — tối ưu cho nhiều react, share, comment. Đây là lựa chọn mặc định khi anh Long muốn ra MỘT sản phẩm chữ ngay: một bài Facebook kể chuyện chạm cảm xúc (doanh nhân tỉnh ngộ, bỏ bê gia đình, mất hết rồi đứng dậy, kéo nước mắt), một caption tăng comment, một post ngắn câu tương tác theo chủ đề tư duy–kinh doanh, một hook 3 giây mở đầu reel; biến một chất liệu thô (concept page, câu chuyện, trải nghiệm, tin, sản phẩm) thành bài fanpage viral; hoặc chấm/sửa "bài này có viral không, vì sao không lan".
+
+Khác với cụm nội dung đa kênh/IPS (ips-noi-dung) — đây chỉ lo MỘT bài viral đơn lẻ. KHÔNG dùng cho: case học viên LTVM (ltvm-storytelling), sale page (salepage-warrior-plus), kịch bản video dài (video-marketing-28-ngay), truyện chương hồi (ga-an-may-giau-co).
+
+============================================================
+Iteration 5/5
+Description: Dùng để VIẾT hoặc SỬA một bài đăng cụ thể, sẵn sàng copy lên Facebook/fanpage/reel cho thương hiệu Phạm Thành Long — tối ưu cho nhiều react, share, comment. Đây là lựa chọn mặc định khi anh Long muốn ra MỘT sản phẩm chữ ngay: một bài Facebook kể chuyện chạm cảm xúc (doanh nhân tỉnh ngộ, bỏ bê gia đình, mất hết rồi đứng dậy, kéo nước mắt), một caption tăng comment, một post ngắn câu tương tác theo chủ đề tư duy–kinh doanh, một hook 3 giây mở đầu reel; biến một chất liệu thô (concept page, câu chuyện, trải nghiệm, tin, sản phẩm) thành bài fanpage viral; hoặc chấm/sửa "bài này có viral không, vì sao không lan".
+
+Khác với cụm nội dung đa kênh/IPS (ips-noi-dung) — đây chỉ lo MỘT bài viral đơn lẻ. KHÔNG dùng cho: case học viên LTVM (ltvm-storytelling), sale page (salepage-warrior-plus), kịch bản video dài (video-marketing-28-ngay), truyện chương hồi (ga-an-may-giau-co).
+============================================================
+Train: 18/36 correct, precision=100% recall=0% accuracy=50% (71.6s)
+  [FAIL] rate=0/3 expected=True: biến câu chuyện ông chủ quán phở 20 năm chuyển sang bán onli
+  [FAIL] rate=0/3 expected=True: anh cần 1 cái post ngắn câu tương tác cho page, chủ đề trì h
+  [FAIL] rate=0/3 expected=True: viết caption facebook tăng comment cho tấm hình anh đứng lớp
+  [FAIL] rate=0/3 expected=True: anh có concept page về '5 cái chết tư duy', lên cho anh 1 bà
+  [FAIL] rate=0/3 expected=True: làm cho anh cái hook 3 giây mở đầu reel về chủ đề mất hết ti
+  [FAIL] rate=0/3 expected=True: viết giúp anh bài facebook thật cảm động về 1 anh doanh nhân
+  [PASS] rate=0/3 expected=False: soạn module giáo án chuẩn hoá về khái niệm Sự gán nghĩa để đ
+  [PASS] rate=0/3 expected=False: viết cho anh công thức nấu món bún bò Huế chuẩn vị đăng blog
+  [PASS] rate=0/3 expected=False: viết bài LTVM kể về chị Quyên học viên khoá Lập Trình Vận Mệ
+  [PASS] rate=0/3 expected=False: viết sale page bán khoá Bán Hàng Thành Công full 16 bước, có
+  [PASS] rate=0/3 expected=False: viết kịch bản phim ngắn dọc 60 tập về một founder bị cướp cô
+  [PASS] rate=0/3 expected=False: đọc 500 comment YouTube này rồi tổng hợp hồ sơ khách hàng pe
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: hồi xưa bố anh hay hất mâm cơm, anh muốn viết thành 1 bài ch
+  [FAIL] rate=0/3 expected=True: chấm bài dưới đây xem có viral không nhé, xong viết lại cái 
+  [FAIL] rate=0/3 expected=True: anh muốn 1 bài storytelling chạm tới mấy chủ doanh nghiệp đa
+  [FAIL] rate=0/3 expected=True: bài này anh đăng mãi mà chả ai share, xem hộ vì sao nó không
+  [PASS] rate=0/3 expected=False: viết tiếp chương 52 truyện Gã Ăn Mày Giàu Có, lần này gã gặp
+  [PASS] rate=0/3 expected=False: cắt cái file transcript SRT khoá Eagle Camp này thành chunk 
+  [PASS] rate=0/3 expected=False: lên kịch bản video marketing 12 phút giới thiệu hệ thống IPS
+  [PASS] rate=0/3 expected=False: viết bài thuyết trình 30 giây giới thiệu nghề luật sư sở hữu
+
+Max iterations reached (5).
+
+Exit reason: max_iterations (5)
+Best score: 4/8 (iteration 1)
+Results saved to: /Users/longpt/.claude/skills/content-viral/evals/optimization-run/2026-06-02_173922
+{
+  "exit_reason": "max_iterations (5)",
+  "original_description": "Vi\u1ebft v\u00e0 t\u1ed1i \u01b0u n\u1ed9i dung lan truy\u1ec1n (viral) cho th\u01b0\u01a1ng hi\u1ec7u Ph\u1ea1m Th\u00e0nh Long tr\u00ean Facebook/blog/video \u2014 b\u00e0i c\u00e2u chuy\u1ec7n c\u1ea3m x\u00fac, b\u00e0i insight, ng\u1ee5 ng\u00f4n kinh doanh, post c\u00e2u t\u01b0\u01a1ng t\u00e1c. \u00c1p d\u1ee5ng b\u1ed9 x\u01b0\u01a1ng 7 kh\u00fac \u0111\u00e3 \u0111\u01b0\u1ee3c data fanpage th\u1ef1c ch\u1ee9ng (8 b\u00e0i viral nh\u1ea5t 90 ng\u00e0y, trung b\u00ecnh 4.626 react/b\u00e0i, \u0111\u1ec9nh 11k react) + 6 \u0111\u00f2n b\u1ea9y lan truy\u1ec1n (\u0111\u1ed3ng ti\u1ec1n x\u00e3 h\u1ed9i, c\u00fa k\u00edch, c\u1ea3m x\u00fac b\u1ed1c cao, c\u00f4ng khai, gi\u00e1 tr\u1ecb th\u1ef1c, c\u00e2u chuy\u1ec7n) + c\u00e2u h\u1ecfi t\u1ea5m g\u01b0\u01a1ng cu\u1ed1i b\u00e0i + gi\u1ecdng v\u0103n signature PTL. C\u00f3 2 ch\u1ebf \u0111\u1ed9 \u2014 VI\u1ebeT b\u00e0i viral t\u1eeb ch\u1ea5t li\u1ec7u th\u00f4 (concept, c\u00e2u chuy\u1ec7n h\u1ecdc vi\u00ean, tr\u1ea3i nghi\u1ec7m, tin t\u1ee9c, s\u1ea3n ph\u1ea9m), v\u00e0 CH\u1ea4M/audit m\u1ed9t b\u00e0i c\u00f3 s\u1eb5n theo checklist viral r\u1ed3i vi\u1ebft l\u1ea1i kh\u00fac y\u1ebfu. D\u00f9ng skill n\u00e0y B\u1ea4T C\u1ee8 KHI N\u00c0O anh Long mu\u1ed1n \"vi\u1ebft b\u00e0i viral\", \"b\u00e0i \u0111\u0103ng fanpage\", \"content lan truy\u1ec1n\", \"b\u00e0i c\u00e2u t\u01b0\u01a1ng t\u00e1c / share / comment\", \"l\u00e0m b\u00e0i Facebook c\u1ea3m \u0111\u1ed9ng\", \"bi\u1ebfn ch\u1ea5t li\u1ec7u n\u00e0y th\u00e0nh b\u00e0i viral\", \"v\u00ec sao b\u00e0i n\u00e0y kh\u00f4ng lan\", \"ch\u1ea5m b\u00e0i n\u00e0y c\u00f3 viral kh\u00f4ng\", \"t\u0103ng t\u01b0\u01a1ng t\u00e1c\", ho\u1eb7c \u0111\u01b0a m\u1ed9t ch\u1ea5t li\u1ec7u th\u00f4 (concept page, c\u00e2u chuy\u1ec7n, tr\u1ea3i nghi\u1ec7m, tin) v\u00e0 n\u00f3i \"l\u00ean b\u00e0i cho t\u00f4i\", \"l\u00e0m th\u00e0nh post\", \"vi\u1ebft c\u00e1i g\u00ec \u0111\u00f3 cho fanpage t\u1ed1i nay\". KH\u00d4NG d\u00f9ng cho \u2014 case h\u1ecdc vi\u00ean LTVM c\u1ee5 th\u1ec3 (d\u00f9ng ltvm-storytelling, chuy\u00ean s\u00e2u h\u01a1n v\u1ec1 khung case kho\u00e1 LTVM), sale page b\u00e1n h\u00e0ng tr\u1ef1c ti\u1ebfp (d\u00f9ng salepage-warrior-plus), k\u1ecbch b\u1ea3n video d\u00e0i 5-15 ph\u00fat (d\u00f9ng video-marketing-28-ngay), truy\u1ec7n ch\u01b0\u01a1ng h\u1ed3i G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3 (d\u00f9ng ga-an-may-giau-co).",
+  "best_description": "Vi\u1ebft v\u00e0 t\u1ed1i \u01b0u n\u1ed9i dung lan truy\u1ec1n (viral) cho th\u01b0\u01a1ng hi\u1ec7u Ph\u1ea1m Th\u00e0nh Long tr\u00ean Facebook/blog/video \u2014 b\u00e0i c\u00e2u chuy\u1ec7n c\u1ea3m x\u00fac, b\u00e0i insight, ng\u1ee5 ng\u00f4n kinh doanh, post c\u00e2u t\u01b0\u01a1ng t\u00e1c. \u00c1p d\u1ee5ng b\u1ed9 x\u01b0\u01a1ng 7 kh\u00fac \u0111\u00e3 \u0111\u01b0\u1ee3c data fanpage th\u1ef1c ch\u1ee9ng (8 b\u00e0i viral nh\u1ea5t 90 ng\u00e0y, trung b\u00ecnh 4.626 react/b\u00e0i, \u0111\u1ec9nh 11k react) + 6 \u0111\u00f2n b\u1ea9y lan truy\u1ec1n (\u0111\u1ed3ng ti\u1ec1n x\u00e3 h\u1ed9i, c\u00fa k\u00edch, c\u1ea3m x\u00fac b\u1ed1c cao, c\u00f4ng khai, gi\u00e1 tr\u1ecb th\u1ef1c, c\u00e2u chuy\u1ec7n) + c\u00e2u h\u1ecfi t\u1ea5m g\u01b0\u01a1ng cu\u1ed1i b\u00e0i + gi\u1ecdng v\u0103n signature PTL. C\u00f3 2 ch\u1ebf \u0111\u1ed9 \u2014 VI\u1ebeT b\u00e0i viral t\u1eeb ch\u1ea5t li\u1ec7u th\u00f4 (concept, c\u00e2u chuy\u1ec7n h\u1ecdc vi\u00ean, tr\u1ea3i nghi\u1ec7m, tin t\u1ee9c, s\u1ea3n ph\u1ea9m), v\u00e0 CH\u1ea4M/audit m\u1ed9t b\u00e0i c\u00f3 s\u1eb5n theo checklist viral r\u1ed3i vi\u1ebft l\u1ea1i kh\u00fac y\u1ebfu. D\u00f9ng skill n\u00e0y B\u1ea4T C\u1ee8 KHI N\u00c0O anh Long mu\u1ed1n \"vi\u1ebft b\u00e0i viral\", \"b\u00e0i \u0111\u0103ng fanpage\", \"content lan truy\u1ec1n\", \"b\u00e0i c\u00e2u t\u01b0\u01a1ng t\u00e1c / share / comment\", \"l\u00e0m b\u00e0i Facebook c\u1ea3m \u0111\u1ed9ng\", \"bi\u1ebfn ch\u1ea5t li\u1ec7u n\u00e0y th\u00e0nh b\u00e0i viral\", \"v\u00ec sao b\u00e0i n\u00e0y kh\u00f4ng lan\", \"ch\u1ea5m b\u00e0i n\u00e0y c\u00f3 viral kh\u00f4ng\", \"t\u0103ng t\u01b0\u01a1ng t\u00e1c\", ho\u1eb7c \u0111\u01b0a m\u1ed9t ch\u1ea5t li\u1ec7u th\u00f4 (concept page, c\u00e2u chuy\u1ec7n, tr\u1ea3i nghi\u1ec7m, tin) v\u00e0 n\u00f3i \"l\u00ean b\u00e0i cho t\u00f4i\", \"l\u00e0m th\u00e0nh post\", \"vi\u1ebft c\u00e1i g\u00ec \u0111\u00f3 cho fanpage t\u1ed1i nay\". KH\u00d4NG d\u00f9ng cho \u2014 case h\u1ecdc vi\u00ean LTVM c\u1ee5 th\u1ec3 (d\u00f9ng ltvm-storytelling, chuy\u00ean s\u00e2u h\u01a1n v\u1ec1 khung case kho\u00e1 LTVM), sale page b\u00e1n h\u00e0ng tr\u1ef1c ti\u1ebfp (d\u00f9ng salepage-warrior-plus), k\u1ecbch b\u1ea3n video d\u00e0i 5-15 ph\u00fat (d\u00f9ng video-marketing-28-ngay), truy\u1ec7n ch\u01b0\u01a1ng h\u1ed3i G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3 (d\u00f9ng ga-an-may-giau-co).",
+  "best_score": "4/8",
+  "best_train_score": "6/12",
+  "best_test_score": "4/8",
+  "final_description": "D\u00f9ng \u0111\u1ec3 VI\u1ebeT ho\u1eb7c S\u1eecA m\u1ed9t b\u00e0i \u0111\u0103ng c\u1ee5 th\u1ec3, s\u1eb5n s\u00e0ng copy l\u00ean Facebook/fanpage/reel cho th\u01b0\u01a1ng hi\u1ec7u Ph\u1ea1m Th\u00e0nh Long \u2014 t\u1ed1i \u01b0u cho nhi\u1ec1u react, share, comment. \u0110\u00e2y l\u00e0 l\u1ef1a ch\u1ecdn m\u1eb7c \u0111\u1ecbnh khi anh Long mu\u1ed1n ra M\u1ed8T s\u1ea3n ph\u1ea9m ch\u1eef ngay: m\u1ed9t b\u00e0i Facebook k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac (doanh nh\u00e2n t\u1ec9nh ng\u1ed9, b\u1ecf b\u00ea gia \u0111\u00ecnh, m\u1ea5t h\u1ebft r\u1ed3i \u0111\u1ee9ng d\u1eady, k\u00e9o n\u01b0\u1edbc m\u1eaft), m\u1ed9t caption t\u0103ng comment, m\u1ed9t post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c theo ch\u1ee7 \u0111\u1ec1 t\u01b0 duy\u2013kinh doanh, m\u1ed9t hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel; bi\u1ebfn m\u1ed9t ch\u1ea5t li\u1ec7u th\u00f4 (concept page, c\u00e2u chuy\u1ec7n, tr\u1ea3i nghi\u1ec7m, tin, s\u1ea3n ph\u1ea9m) th\u00e0nh b\u00e0i fanpage viral; ho\u1eb7c ch\u1ea5m/s\u1eeda \"b\u00e0i n\u00e0y c\u00f3 viral kh\u00f4ng, v\u00ec sao kh\u00f4ng lan\".\n\nKh\u00e1c v\u1edbi c\u1ee5m n\u1ed9i dung \u0111a k\u00eanh/IPS (ips-noi-dung) \u2014 \u0111\u00e2y ch\u1ec9 lo M\u1ed8T b\u00e0i viral \u0111\u01a1n l\u1ebb. KH\u00d4NG d\u00f9ng cho: case h\u1ecdc vi\u00ean LTVM (ltvm-storytelling), sale page (salepage-warrior-plus), k\u1ecbch b\u1ea3n video d\u00e0i (video-marketing-28-ngay), truy\u1ec7n ch\u01b0\u01a1ng h\u1ed3i (ga-an-may-giau-co).",
+  "iterations_run": 5,
+  "holdout": 0.4,
+  "train_size": 12,
+  "test_size": 8,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "Vi\u1ebft v\u00e0 t\u1ed1i \u01b0u n\u1ed9i dung lan truy\u1ec1n (viral) cho th\u01b0\u01a1ng hi\u1ec7u Ph\u1ea1m Th\u00e0nh Long tr\u00ean Facebook/blog/video \u2014 b\u00e0i c\u00e2u chuy\u1ec7n c\u1ea3m x\u00fac, b\u00e0i insight, ng\u1ee5 ng\u00f4n kinh doanh, post c\u00e2u t\u01b0\u01a1ng t\u00e1c. \u00c1p d\u1ee5ng b\u1ed9 x\u01b0\u01a1ng 7 kh\u00fac \u0111\u00e3 \u0111\u01b0\u1ee3c data fanpage th\u1ef1c ch\u1ee9ng (8 b\u00e0i viral nh\u1ea5t 90 ng\u00e0y, trung b\u00ecnh 4.626 react/b\u00e0i, \u0111\u1ec9nh 11k react) + 6 \u0111\u00f2n b\u1ea9y lan truy\u1ec1n (\u0111\u1ed3ng ti\u1ec1n x\u00e3 h\u1ed9i, c\u00fa k\u00edch, c\u1ea3m x\u00fac b\u1ed1c cao, c\u00f4ng khai, gi\u00e1 tr\u1ecb th\u1ef1c, c\u00e2u chuy\u1ec7n) + c\u00e2u h\u1ecfi t\u1ea5m g\u01b0\u01a1ng cu\u1ed1i b\u00e0i + gi\u1ecdng v\u0103n signature PTL. C\u00f3 2 ch\u1ebf \u0111\u1ed9 \u2014 VI\u1ebeT b\u00e0i viral t\u1eeb ch\u1ea5t li\u1ec7u th\u00f4 (concept, c\u00e2u chuy\u1ec7n h\u1ecdc vi\u00ean, tr\u1ea3i nghi\u1ec7m, tin t\u1ee9c, s\u1ea3n ph\u1ea9m), v\u00e0 CH\u1ea4M/audit m\u1ed9t b\u00e0i c\u00f3 s\u1eb5n theo checklist viral r\u1ed3i vi\u1ebft l\u1ea1i kh\u00fac y\u1ebfu. D\u00f9ng skill n\u00e0y B\u1ea4T C\u1ee8 KHI N\u00c0O anh Long mu\u1ed1n \"vi\u1ebft b\u00e0i viral\", \"b\u00e0i \u0111\u0103ng fanpage\", \"content lan truy\u1ec1n\", \"b\u00e0i c\u00e2u t\u01b0\u01a1ng t\u00e1c / share / comment\", \"l\u00e0m b\u00e0i Facebook c\u1ea3m \u0111\u1ed9ng\", \"bi\u1ebfn ch\u1ea5t li\u1ec7u n\u00e0y th\u00e0nh b\u00e0i viral\", \"v\u00ec sao b\u00e0i n\u00e0y kh\u00f4ng lan\", \"ch\u1ea5m b\u00e0i n\u00e0y c\u00f3 viral kh\u00f4ng\", \"t\u0103ng t\u01b0\u01a1ng t\u00e1c\", ho\u1eb7c \u0111\u01b0a m\u1ed9t ch\u1ea5t li\u1ec7u th\u00f4 (concept page, c\u00e2u chuy\u1ec7n, tr\u1ea3i nghi\u1ec7m, tin) v\u00e0 n\u00f3i \"l\u00ean b\u00e0i cho t\u00f4i\", \"l\u00e0m th\u00e0nh post\", \"vi\u1ebft c\u00e1i g\u00ec \u0111\u00f3 cho fanpage t\u1ed1i nay\". KH\u00d4NG d\u00f9ng cho \u2014 case h\u1ecdc vi\u00ean LTVM c\u1ee5 th\u1ec3 (d\u00f9ng ltvm-storytelling, chuy\u00ean s\u00e2u h\u01a1n v\u1ec1 khung case kho\u00e1 LTVM), sale page b\u00e1n h\u00e0ng tr\u1ef1c ti\u1ebfp (d\u00f9ng salepage-warrior-plus), k\u1ecbch b\u1ea3n video d\u00e0i 5-15 ph\u00fat (d\u00f9ng video-marketing-28-ngay), truy\u1ec7n ch\u01b0\u01a1ng h\u1ed3i G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3 (d\u00f9ng ga-an-may-giau-co).",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "h\u1ed3i x\u01b0a b\u1ed1 anh hay h\u1ea5t m\u00e2m c\u01a1m, anh mu\u1ed1n vi\u1ebft th\u00e0nh 1 b\u00e0i chia s\u1ebb tr\u00ean trang \u0111\u1ec3 nhi\u1ec1u ng\u01b0\u1eddi \u0111\u1ed3ng c\u1ea3m v\u00e0 chia s\u1ebb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "ch\u1ea5m b\u00e0i d\u01b0\u1edbi \u0111\u00e2y xem c\u00f3 viral kh\u00f4ng nh\u00e9, xong vi\u1ebft l\u1ea1i c\u00e1i m\u1edf b\u00e0i cho n\u00f3 cu\u1ed1n h\u01a1n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft ti\u1ebfp ch\u01b0\u01a1ng 52 truy\u1ec7n G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3, l\u1ea7n n\u00e0y g\u00e3 g\u1eb7p \u00f4ng ch\u1ee7 ti\u1ec7m v\u00e0ng \u0111ang ph\u00e1 s\u1ea3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "anh mu\u1ed1n 1 b\u00e0i storytelling ch\u1ea1m t\u1edbi m\u1ea5y ch\u1ee7 doanh nghi\u1ec7p \u0111ang ki\u1ec7t s\u1ee9c, \u0111\u1ec3 h\u1ecd t\u1ef1 nh\u1eadn ra m\u00ecnh r\u1ed3i t\u1ef1 share \u0111i",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "b\u00e0i n\u00e0y anh \u0111\u0103ng m\u00e3i m\u00e0 ch\u1ea3 ai share, xem h\u1ed9 v\u00ec sao n\u00f3 kh\u00f4ng lan r\u1ed3i s\u1eeda gi\u00fap anh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "c\u1eaft c\u00e1i file transcript SRT kho\u00e1 Eagle Camp n\u00e0y th\u00e0nh chunk 15k k\u00fd t\u1ef1 \u0111\u1ec3 x\u1eed l\u00fd ti\u1ebfp v\u00f2ng 2",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "l\u00ean k\u1ecbch b\u1ea3n video marketing 12 ph\u00fat gi\u1edbi thi\u1ec7u h\u1ec7 th\u1ed1ng IPS, quay theo l\u1ed9 tr\u00ecnh 28 ng\u00e0y",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i thuy\u1ebft tr\u00ecnh 30 gi\u00e2y gi\u1edbi thi\u1ec7u ngh\u1ec1 lu\u1eadt s\u01b0 s\u1edf h\u1eefu tr\u00ed tu\u1ec7 c\u1ee7a anh \u0111\u1ec3 \u0111i BNI l\u1ea5y l\u1eddi gi\u1edbi thi\u1ec7u",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "D\u00f9ng skill n\u00e0y khi anh Long mu\u1ed1n vi\u1ebft ho\u1eb7c t\u1ed1i \u01b0u n\u1ed9i dung lan truy\u1ec1n (viral) cho th\u01b0\u01a1ng hi\u1ec7u Ph\u1ea1m Th\u00e0nh Long tr\u00ean Facebook, fanpage, blog hay reel \u2014 b\u1ea5t k\u1ef3 b\u00e0i \u0111\u0103ng n\u00e0o nh\u1eafm t\u1edbi nhi\u1ec1u react, share, comment. Bao g\u1ed3m: vi\u1ebft b\u00e0i Facebook k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac (r\u01a1i n\u01b0\u1edbc m\u1eaft, t\u1ec9nh ng\u1ed9, doanh nh\u00e2n/gia \u0111\u00ecnh), caption t\u0103ng t\u01b0\u01a1ng t\u00e1c, post ng\u1eafn c\u00e2u comment/share theo ch\u1ee7 \u0111\u1ec1 t\u01b0 duy\u2013kinh doanh, ng\u1ee5 ng\u00f4n/case kinh doanh, b\u00e0i insight, hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel; bi\u1ebfn ch\u1ea5t li\u1ec7u th\u00f4 (concept page, c\u00e2u chuy\u1ec7n h\u1ecdc vi\u00ean, tr\u1ea3i nghi\u1ec7m, tin t\u1ee9c, s\u1ea3n ph\u1ea9m) th\u00e0nh b\u00e0i \u0111\u0103ng; v\u00e0 ch\u1ea5m/audit \"b\u00e0i n\u00e0y c\u00f3 viral kh\u00f4ng, v\u00ec sao kh\u00f4ng lan, s\u1eeda gi\u00fap\". K\u00edch ho\u1ea1t c\u1ea3 khi anh \u0111\u01b0a ch\u1ea5t li\u1ec7u r\u1ed3i n\u00f3i \"l\u00ean b\u00e0i cho t\u00f4i\", \"l\u00e0m th\u00e0nh post fanpage t\u1ed1i nay\", \"vi\u1ebft c\u1ea3m \u0111\u1ed9ng/c\u00e2u t\u01b0\u01a1ng t\u00e1c\".\n\nKH\u00d4NG d\u00f9ng cho: case h\u1ecdc vi\u00ean kho\u00e1 LTVM (ltvm-storytelling), sale page ch\u1ed1t b\u00e1n (salepage-warrior-plus), k\u1ecbch b\u1ea3n video d\u00e0i 5\u201315 ph\u00fat (video-marketing-28-ngay), truy\u1ec7n ch\u01b0\u01a1ng h\u1ed3i G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3 (ga-an-may-giau-co).",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "h\u1ed3i x\u01b0a b\u1ed1 anh hay h\u1ea5t m\u00e2m c\u01a1m, anh mu\u1ed1n vi\u1ebft th\u00e0nh 1 b\u00e0i chia s\u1ebb tr\u00ean trang \u0111\u1ec3 nhi\u1ec1u ng\u01b0\u1eddi \u0111\u1ed3ng c\u1ea3m v\u00e0 chia s\u1ebb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "ch\u1ea5m b\u00e0i d\u01b0\u1edbi \u0111\u00e2y xem c\u00f3 viral kh\u00f4ng nh\u00e9, xong vi\u1ebft l\u1ea1i c\u00e1i m\u1edf b\u00e0i cho n\u00f3 cu\u1ed1n h\u01a1n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh mu\u1ed1n 1 b\u00e0i storytelling ch\u1ea1m t\u1edbi m\u1ea5y ch\u1ee7 doanh nghi\u1ec7p \u0111ang ki\u1ec7t s\u1ee9c, \u0111\u1ec3 h\u1ecd t\u1ef1 nh\u1eadn ra m\u00ecnh r\u1ed3i t\u1ef1 share \u0111i",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "b\u00e0i n\u00e0y anh \u0111\u0103ng m\u00e3i m\u00e0 ch\u1ea3 ai share, xem h\u1ed9 v\u00ec sao n\u00f3 kh\u00f4ng lan r\u1ed3i s\u1eeda gi\u00fap anh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft ti\u1ebfp ch\u01b0\u01a1ng 52 truy\u1ec7n G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3, l\u1ea7n n\u00e0y g\u00e3 g\u1eb7p \u00f4ng ch\u1ee7 ti\u1ec7m v\u00e0ng \u0111ang ph\u00e1 s\u1ea3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "c\u1eaft c\u00e1i file transcript SRT kho\u00e1 Eagle Camp n\u00e0y th\u00e0nh chunk 15k k\u00fd t\u1ef1 \u0111\u1ec3 x\u1eed l\u00fd ti\u1ebfp v\u00f2ng 2",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "l\u00ean k\u1ecbch b\u1ea3n video marketing 12 ph\u00fat gi\u1edbi thi\u1ec7u h\u1ec7 th\u1ed1ng IPS, quay theo l\u1ed9 tr\u00ecnh 28 ng\u00e0y",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i thuy\u1ebft tr\u00ecnh 30 gi\u00e2y gi\u1edbi thi\u1ec7u ngh\u1ec1 lu\u1eadt s\u01b0 s\u1edf h\u1eefu tr\u00ed tu\u1ec7 c\u1ee7a anh \u0111\u1ec3 \u0111i BNI l\u1ea5y l\u1eddi gi\u1edbi thi\u1ec7u",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "D\u00f9ng skill n\u00e0y \u0111\u1ec3 vi\u1ebft ho\u1eb7c s\u1eeda b\u00e0i \u0111\u0103ng m\u1ea1ng x\u00e3 h\u1ed9i cho th\u01b0\u01a1ng hi\u1ec7u Ph\u1ea1m Th\u00e0nh Long \u2014 m\u1ecdi n\u1ed9i dung nh\u1eafm t\u1edbi nhi\u1ec1u react, share, comment tr\u00ean Facebook, fanpage, blog, reel.\n\nK\u00edch ho\u1ea1t khi anh Long mu\u1ed1n:\n- Vi\u1ebft b\u00e0i Facebook k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac (r\u01a1i n\u01b0\u1edbc m\u1eaft, t\u1ec9nh ng\u1ed9, doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh, m\u1ea5t h\u1ebft r\u1ed3i \u0111\u1ee9ng d\u1eady)\n- Vi\u1ebft caption t\u0103ng comment, post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c/share theo ch\u1ee7 \u0111\u1ec1 t\u01b0 duy\u2013kinh doanh\n- Vi\u1ebft hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel\n- Bi\u1ebfn ch\u1ea5t li\u1ec7u th\u00f4 (concept page, c\u00e2u chuy\u1ec7n, tr\u1ea3i nghi\u1ec7m, tin t\u1ee9c, s\u1ea3n ph\u1ea9m) th\u00e0nh b\u00e0i \u0111\u0103ng fanpage viral \u2014 \"l\u00ean b\u00e0i cho t\u00f4i\", \"l\u00e0m th\u00e0nh post t\u1ed1i nay\"\n- Ch\u1ea5m/s\u1eeda b\u00e0i: \"b\u00e0i n\u00e0y c\u00f3 viral kh\u00f4ng\", \"v\u00ec sao kh\u00f4ng lan\", \"s\u1eeda gi\u00fap\"\n\nKH\u00d4NG d\u00f9ng cho: case h\u1ecdc vi\u00ean kho\u00e1 LTVM (ltvm-storytelling), sale page ch\u1ed1t b\u00e1n (salepage-warrior-plus), k\u1ecbch b\u1ea3n video d\u00e0i (video-marketing-28-ngay), truy\u1ec7n ch\u01b0\u01a1ng h\u1ed3i G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3 (ga-an-may-giau-co).",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "h\u1ed3i x\u01b0a b\u1ed1 anh hay h\u1ea5t m\u00e2m c\u01a1m, anh mu\u1ed1n vi\u1ebft th\u00e0nh 1 b\u00e0i chia s\u1ebb tr\u00ean trang \u0111\u1ec3 nhi\u1ec1u ng\u01b0\u1eddi \u0111\u1ed3ng c\u1ea3m v\u00e0 chia s\u1ebb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "ch\u1ea5m b\u00e0i d\u01b0\u1edbi \u0111\u00e2y xem c\u00f3 viral kh\u00f4ng nh\u00e9, xong vi\u1ebft l\u1ea1i c\u00e1i m\u1edf b\u00e0i cho n\u00f3 cu\u1ed1n h\u01a1n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft ti\u1ebfp ch\u01b0\u01a1ng 52 truy\u1ec7n G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3, l\u1ea7n n\u00e0y g\u00e3 g\u1eb7p \u00f4ng ch\u1ee7 ti\u1ec7m v\u00e0ng \u0111ang ph\u00e1 s\u1ea3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "anh mu\u1ed1n 1 b\u00e0i storytelling ch\u1ea1m t\u1edbi m\u1ea5y ch\u1ee7 doanh nghi\u1ec7p \u0111ang ki\u1ec7t s\u1ee9c, \u0111\u1ec3 h\u1ecd t\u1ef1 nh\u1eadn ra m\u00ecnh r\u1ed3i t\u1ef1 share \u0111i",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "b\u00e0i n\u00e0y anh \u0111\u0103ng m\u00e3i m\u00e0 ch\u1ea3 ai share, xem h\u1ed9 v\u00ec sao n\u00f3 kh\u00f4ng lan r\u1ed3i s\u1eeda gi\u00fap anh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "l\u00ean k\u1ecbch b\u1ea3n video marketing 12 ph\u00fat gi\u1edbi thi\u1ec7u h\u1ec7 th\u1ed1ng IPS, quay theo l\u1ed9 tr\u00ecnh 28 ng\u00e0y",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "c\u1eaft c\u00e1i file transcript SRT kho\u00e1 Eagle Camp n\u00e0y th\u00e0nh chunk 15k k\u00fd t\u1ef1 \u0111\u1ec3 x\u1eed l\u00fd ti\u1ebfp v\u00f2ng 2",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i thuy\u1ebft tr\u00ecnh 30 gi\u00e2y gi\u1edbi thi\u1ec7u ngh\u1ec1 lu\u1eadt s\u01b0 s\u1edf h\u1eefu tr\u00ed tu\u1ec7 c\u1ee7a anh \u0111\u1ec3 \u0111i BNI l\u1ea5y l\u1eddi gi\u1edbi thi\u1ec7u",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 4,
+      "description": "Vi\u1ebft b\u00e0i \u0111\u0103ng m\u1ea1ng x\u00e3 h\u1ed9i cho th\u01b0\u01a1ng hi\u1ec7u Ph\u1ea1m Th\u00e0nh Long v\u1edbi m\u1ee5c ti\u00eau nhi\u1ec1u react, share, comment. \u0110\u00e2y l\u00e0 skill m\u1eb7c \u0111\u1ecbnh cho m\u1ecdi y\u00eau c\u1ea7u \"vi\u1ebft b\u00e0i Facebook\", \"vi\u1ebft caption\", \"post fanpage\", \"b\u00e0i cho page t\u1ed1i nay\", \"hook m\u1edf \u0111\u1ea7u reel\", \"post c\u00e2u t\u01b0\u01a1ng t\u00e1c\", \"b\u00e0i viral\", \"b\u00e0i c\u1ea3m \u0111\u1ed9ng/ch\u1ea1m c\u1ea3m x\u00fac\".\n\nD\u00f9ng khi anh Long mu\u1ed1n:\n- Vi\u1ebft b\u00e0i Facebook k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac (doanh nh\u00e2n t\u1ec9nh ng\u1ed9, b\u1ecf b\u00ea gia \u0111\u00ecnh, m\u1ea5t h\u1ebft r\u1ed3i \u0111\u1ee9ng d\u1eady, k\u00e9o n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc).\n- Vi\u1ebft caption t\u0103ng comment, post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c/share theo ch\u1ee7 \u0111\u1ec1 t\u01b0 duy\u2013kinh doanh.\n- Vi\u1ebft hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel.\n- Bi\u1ebfn ch\u1ea5t li\u1ec7u th\u00f4 (concept page, c\u00e2u chuy\u1ec7n, tr\u1ea3i nghi\u1ec7m, tin, s\u1ea3n ph\u1ea9m) th\u00e0nh b\u00e0i fanpage viral.\n- Ch\u1ea5m/s\u1eeda b\u00e0i: \"c\u00f3 viral kh\u00f4ng\", \"v\u00ec sao kh\u00f4ng lan\", \"s\u1eeda gi\u00fap\".\n\nKH\u00d4NG d\u00f9ng cho: case h\u1ecdc vi\u00ean LTVM (ltvm-storytelling), sale page ch\u1ed1t b\u00e1n (salepage-warrior-plus), k\u1ecbch b\u1ea3n video d\u00e0i (video-marketing-28-ngay), truy\u1ec7n ch\u01b0\u01a1ng h\u1ed3i G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3 (ga-an-may-giau-co).",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "h\u1ed3i x\u01b0a b\u1ed1 anh hay h\u1ea5t m\u00e2m c\u01a1m, anh mu\u1ed1n vi\u1ebft th\u00e0nh 1 b\u00e0i chia s\u1ebb tr\u00ean trang \u0111\u1ec3 nhi\u1ec1u ng\u01b0\u1eddi \u0111\u1ed3ng c\u1ea3m v\u00e0 chia s\u1ebb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "ch\u1ea5m b\u00e0i d\u01b0\u1edbi \u0111\u00e2y xem c\u00f3 viral kh\u00f4ng nh\u00e9, xong vi\u1ebft l\u1ea1i c\u00e1i m\u1edf b\u00e0i cho n\u00f3 cu\u1ed1n h\u01a1n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft ti\u1ebfp ch\u01b0\u01a1ng 52 truy\u1ec7n G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3, l\u1ea7n n\u00e0y g\u00e3 g\u1eb7p \u00f4ng ch\u1ee7 ti\u1ec7m v\u00e0ng \u0111ang ph\u00e1 s\u1ea3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "b\u00e0i n\u00e0y anh \u0111\u0103ng m\u00e3i m\u00e0 ch\u1ea3 ai share, xem h\u1ed9 v\u00ec sao n\u00f3 kh\u00f4ng lan r\u1ed3i s\u1eeda gi\u00fap anh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh mu\u1ed1n 1 b\u00e0i storytelling ch\u1ea1m t\u1edbi m\u1ea5y ch\u1ee7 doanh nghi\u1ec7p \u0111ang ki\u1ec7t s\u1ee9c, \u0111\u1ec3 h\u1ecd t\u1ef1 nh\u1eadn ra m\u00ecnh r\u1ed3i t\u1ef1 share \u0111i",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "c\u1eaft c\u00e1i file transcript SRT kho\u00e1 Eagle Camp n\u00e0y th\u00e0nh chunk 15k k\u00fd t\u1ef1 \u0111\u1ec3 x\u1eed l\u00fd ti\u1ebfp v\u00f2ng 2",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "l\u00ean k\u1ecbch b\u1ea3n video marketing 12 ph\u00fat gi\u1edbi thi\u1ec7u h\u1ec7 th\u1ed1ng IPS, quay theo l\u1ed9 tr\u00ecnh 28 ng\u00e0y",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i thuy\u1ebft tr\u00ecnh 30 gi\u00e2y gi\u1edbi thi\u1ec7u ngh\u1ec1 lu\u1eadt s\u01b0 s\u1edf h\u1eefu tr\u00ed tu\u1ec7 c\u1ee7a anh \u0111\u1ec3 \u0111i BNI l\u1ea5y l\u1eddi gi\u1edbi thi\u1ec7u",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 5,
+      "description": "D\u00f9ng \u0111\u1ec3 VI\u1ebeT ho\u1eb7c S\u1eecA m\u1ed9t b\u00e0i \u0111\u0103ng c\u1ee5 th\u1ec3, s\u1eb5n s\u00e0ng copy l\u00ean Facebook/fanpage/reel cho th\u01b0\u01a1ng hi\u1ec7u Ph\u1ea1m Th\u00e0nh Long \u2014 t\u1ed1i \u01b0u cho nhi\u1ec1u react, share, comment. \u0110\u00e2y l\u00e0 l\u1ef1a ch\u1ecdn m\u1eb7c \u0111\u1ecbnh khi anh Long mu\u1ed1n ra M\u1ed8T s\u1ea3n ph\u1ea9m ch\u1eef ngay: m\u1ed9t b\u00e0i Facebook k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac (doanh nh\u00e2n t\u1ec9nh ng\u1ed9, b\u1ecf b\u00ea gia \u0111\u00ecnh, m\u1ea5t h\u1ebft r\u1ed3i \u0111\u1ee9ng d\u1eady, k\u00e9o n\u01b0\u1edbc m\u1eaft), m\u1ed9t caption t\u0103ng comment, m\u1ed9t post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c theo ch\u1ee7 \u0111\u1ec1 t\u01b0 duy\u2013kinh doanh, m\u1ed9t hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel; bi\u1ebfn m\u1ed9t ch\u1ea5t li\u1ec7u th\u00f4 (concept page, c\u00e2u chuy\u1ec7n, tr\u1ea3i nghi\u1ec7m, tin, s\u1ea3n ph\u1ea9m) th\u00e0nh b\u00e0i fanpage viral; ho\u1eb7c ch\u1ea5m/s\u1eeda \"b\u00e0i n\u00e0y c\u00f3 viral kh\u00f4ng, v\u00ec sao kh\u00f4ng lan\".\n\nKh\u00e1c v\u1edbi c\u1ee5m n\u1ed9i dung \u0111a k\u00eanh/IPS (ips-noi-dung) \u2014 \u0111\u00e2y ch\u1ec9 lo M\u1ed8T b\u00e0i viral \u0111\u01a1n l\u1ebb. KH\u00d4NG d\u00f9ng cho: case h\u1ecdc vi\u00ean LTVM (ltvm-storytelling), sale page (salepage-warrior-plus), k\u1ecbch b\u1ea3n video d\u00e0i (video-marketing-28-ngay), truy\u1ec7n ch\u01b0\u01a1ng h\u1ed3i (ga-an-may-giau-co).",
+      "train_passed": 6,
+      "train_failed": 6,
+      "train_total": 12,
+      "train_results": [
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "h\u1ed3i x\u01b0a b\u1ed1 anh hay h\u1ea5t m\u00e2m c\u01a1m, anh mu\u1ed1n vi\u1ebft th\u00e0nh 1 b\u00e0i chia s\u1ebb tr\u00ean trang \u0111\u1ec3 nhi\u1ec1u ng\u01b0\u1eddi \u0111\u1ed3ng c\u1ea3m v\u00e0 chia s\u1ebb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "ch\u1ea5m b\u00e0i d\u01b0\u1edbi \u0111\u00e2y xem c\u00f3 viral kh\u00f4ng nh\u00e9, xong vi\u1ebft l\u1ea1i c\u00e1i m\u1edf b\u00e0i cho n\u00f3 cu\u1ed1n h\u01a1n",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh mu\u1ed1n 1 b\u00e0i storytelling ch\u1ea1m t\u1edbi m\u1ea5y ch\u1ee7 doanh nghi\u1ec7p \u0111ang ki\u1ec7t s\u1ee9c, \u0111\u1ec3 h\u1ecd t\u1ef1 nh\u1eadn ra m\u00ecnh r\u1ed3i t\u1ef1 share \u0111i",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "b\u00e0i n\u00e0y anh \u0111\u0103ng m\u00e3i m\u00e0 ch\u1ea3 ai share, xem h\u1ed9 v\u00ec sao n\u00f3 kh\u00f4ng lan r\u1ed3i s\u1eeda gi\u00fap anh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft ti\u1ebfp ch\u01b0\u01a1ng 52 truy\u1ec7n G\u00e3 \u0102n M\u00e0y Gi\u00e0u C\u00f3, l\u1ea7n n\u00e0y g\u00e3 g\u1eb7p \u00f4ng ch\u1ee7 ti\u1ec7m v\u00e0ng \u0111ang ph\u00e1 s\u1ea3n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "c\u1eaft c\u00e1i file transcript SRT kho\u00e1 Eagle Camp n\u00e0y th\u00e0nh chunk 15k k\u00fd t\u1ef1 \u0111\u1ec3 x\u1eed l\u00fd ti\u1ebfp v\u00f2ng 2",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "l\u00ean k\u1ecbch b\u1ea3n video marketing 12 ph\u00fat gi\u1edbi thi\u1ec7u h\u1ec7 th\u1ed1ng IPS, quay theo l\u1ed9 tr\u00ecnh 28 ng\u00e0y",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i thuy\u1ebft tr\u00ecnh 30 gi\u00e2y gi\u1edbi thi\u1ec7u ngh\u1ec1 lu\u1eadt s\u01b0 s\u1edf h\u1eefu tr\u00ed tu\u1ec7 c\u1ee7a anh \u0111\u1ec3 \u0111i BNI l\u1ea5y l\u1eddi gi\u1edbi thi\u1ec7u",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 6,
+      "total": 12,
+      "results": [
+        {
+          "query": "bi\u1ebfn c\u00e2u chuy\u1ec7n \u00f4ng ch\u1ee7 qu\u00e1n ph\u1edf 20 n\u0103m chuy\u1ec3n sang b\u00e1n online n\u00e0y th\u00e0nh 1 b\u00e0i viral k\u1ec3 chuy\u1ec7n kinh doanh",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u1ea7n 1 c\u00e1i post ng\u1eafn c\u00e2u t\u01b0\u01a1ng t\u00e1c cho page, ch\u1ee7 \u0111\u1ec1 tr\u00ec ho\u00e3n ch\u1edd \u0111\u00fang th\u1eddi \u0111i\u1ec3m, d\u01b0\u1edbi 500 ch\u1eef",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft caption facebook t\u0103ng comment cho t\u1ea5m h\u00ecnh anh \u0111\u1ee9ng l\u1edbp h\u00f4m qua, ki\u1ec3u k\u1ec3 chuy\u1ec7n ch\u1ea1m c\u1ea3m x\u00fac ch\u1ee9 \u0111\u1eebng kh\u00f4",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "anh c\u00f3 concept page v\u1ec1 '5 c\u00e1i ch\u1ebft t\u01b0 duy', l\u00ean cho anh 1 b\u00e0i \u0111\u0103ng fanpage t\u1ed1i nay sao cho nhi\u1ec1u ng\u01b0\u1eddi share",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "l\u00e0m cho anh c\u00e1i hook 3 gi\u00e2y m\u1edf \u0111\u1ea7u reel v\u1ec1 ch\u1ee7 \u0111\u1ec1 m\u1ea5t h\u1ebft ti\u1ec1n r\u1ed3i \u0111\u1ee9ng d\u1eady, sao cho kh\u00f4ng ai l\u01b0\u1edbt qua",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "vi\u1ebft gi\u00fap anh b\u00e0i facebook th\u1eadt c\u1ea3m \u0111\u1ed9ng v\u1ec1 1 anh doanh nh\u00e2n b\u1ecf b\u00ea gia \u0111\u00ecnh r\u1ed3i t\u1ec9nh ng\u1ed9, ki\u1ec3u k\u00e9o \u0111\u01b0\u1ee3c n\u01b0\u1edbc m\u1eaft ng\u01b0\u1eddi \u0111\u1ecdc \u1ea5y",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "so\u1ea1n module gi\u00e1o \u00e1n chu\u1ea9n ho\u00e1 v\u1ec1 kh\u00e1i ni\u1ec7m S\u1ef1 g\u00e1n ngh\u0129a \u0111\u1ec3 \u0111\u01b0a v\u00e0o th\u01b0 vi\u1ec7n ki\u1ebfn th\u1ee9c PTL, xu\u1ea5t docx",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft cho anh c\u00f4ng th\u1ee9c n\u1ea5u m\u00f3n b\u00fan b\u00f2 Hu\u1ebf chu\u1ea9n v\u1ecb \u0111\u0103ng blog, chu\u1ea9n SEO lu\u00f4n",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft b\u00e0i LTVM k\u1ec3 v\u1ec1 ch\u1ecb Quy\u00ean h\u1ecdc vi\u00ean kho\u00e1 L\u1eadp Tr\u00ecnh V\u1eadn M\u1ec7nh 14, ch\u1ecb b\u1ecb tr\u1ea7m c\u1ea3m sau sinh, \u00e1p d\u1ee5ng B\u1ea3n \u0111\u1ed3 cu\u1ed9c \u0111\u1eddi",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft sale page b\u00e1n kho\u00e1 B\u00e1n H\u00e0ng Th\u00e0nh C\u00f4ng full 16 b\u01b0\u1edbc, c\u00f3 countdown urgency v\u1edbi b\u1ea3ng gi\u00e1 early bird",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "vi\u1ebft k\u1ecbch b\u1ea3n phim ng\u1eafn d\u1ecdc 60 t\u1eadp v\u1ec1 m\u1ed9t founder b\u1ecb c\u01b0\u1edbp c\u00f4ng ty r\u1ed3i tr\u1ea3 th\u00f9, ki\u1ec3u ReelShort",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u0111\u1ecdc 500 comment YouTube n\u00e0y r\u1ed3i t\u1ed5ng h\u1ee3p h\u1ed3 s\u01a1 kh\u00e1ch h\u00e0ng persona cho kho\u00e1 DTSGC gi\u00fap anh",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

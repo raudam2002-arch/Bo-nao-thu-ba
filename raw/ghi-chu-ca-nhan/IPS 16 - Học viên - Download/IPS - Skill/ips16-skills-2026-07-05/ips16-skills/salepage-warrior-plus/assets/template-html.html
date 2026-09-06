@@ -1,0 +1,530 @@
+<!--
+TEMPLATE HTML SALEPAGE - WARRIOR PLUS STYLE
+Phạm Thành Long - Jay Abraham 16 bước
+
+HƯỚNG DẪN DÙNG:
+1. Thay tất cả [PLACEHOLDER] bằng nội dung thực
+2. Đặt deadline countdown ở dòng có comment "// COUNTDOWN DEADLINE"
+3. Cập nhật link CTA ở các thẻ <a class="cta-button" href="[LINK_MUA]">
+4. Lưu file với tên: salepage-[ten-san-pham].html
+-->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[HEADLINE NGẮN GỌN] - [TÊN SẢN PHẨM]</title>
+<meta name="description" content="[Mô tả 150 ký tự]">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Be Vietnam Pro', -apple-system, sans-serif;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #333;
+    background: #FFFFFF;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 60px 20px; }
+  h1, h2, h3 { line-height: 1.2; }
+
+  /* === URGENCY BANNER === */
+  .urgency-banner {
+    position: sticky; top: 0; z-index: 100;
+    background: #D32F2F; color: white;
+    text-align: center; padding: 12px;
+    font-size: 17px; font-weight: 700;
+  }
+
+  /* === HERO === */
+  .hero { text-align: center; background: linear-gradient(180deg, #FFF8E1 0%, #FFFFFF 100%); }
+  .pre-headline {
+    font-size: 17px; color: #666; font-style: italic; margin-bottom: 16px;
+  }
+  .headline {
+    font-size: 44px; font-weight: 800; color: #D32F2F; margin: 16px 0;
+  }
+  .headline em {
+    background: #FFD700; font-style: normal; padding: 2px 10px; color: #1A1A1A;
+  }
+  .sub-headline {
+    font-size: 24px; color: #555; font-weight: 500; margin-top: 16px;
+  }
+
+  /* === PAIN SECTION === */
+  .pain-section { background: #1A1A1A; color: #FFFFFF; }
+  .pain-section h2 { color: #FFD700; font-size: 32px; margin-bottom: 24px; text-align: center; }
+  .pain-section p { margin-bottom: 20px; font-size: 19px; }
+
+  /* === SOLUTION === */
+  .solution { background: #FFFFFF; text-align: center; }
+  .solution h2 { font-size: 32px; color: #1A1A1A; margin-bottom: 24px; }
+
+  /* === STORY === */
+  .story h2 { font-size: 28px; color: #1A1A1A; margin-bottom: 24px; text-align: center; }
+  .story p { margin-bottom: 20px; }
+  .story blockquote {
+    border-left: 4px solid #FFC107;
+    padding: 12px 24px;
+    background: #FFF8E1;
+    font-style: italic;
+    margin: 20px 0;
+  }
+
+  /* === MECHANISM === */
+  .mechanism { background: #F5F5F5; }
+  .mechanism h2 { font-size: 30px; text-align: center; margin-bottom: 24px; }
+
+  /* === TESTIMONIALS === */
+  .testimonials h2 { font-size: 30px; text-align: center; margin-bottom: 32px; }
+  .testimonial {
+    background: #FFF8E1; border-left: 6px solid #FFC107;
+    padding: 24px; margin: 16px 0; display: flex; gap: 20px;
+  }
+  .testimonial-avatar {
+    width: 80px; height: 80px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
+    background: #DDD;
+  }
+  .testimonial h4 { color: #D32F2F; font-size: 18px; margin-bottom: 8px; }
+  .testimonial .result { font-size: 16px; color: #555; margin-bottom: 12px; }
+  .testimonial blockquote { font-style: italic; color: #1A1A1A; }
+
+  /* === BENEFITS BULLETS === */
+  .benefits { background: #FFFFFF; }
+  .benefits h2 { font-size: 32px; text-align: center; margin-bottom: 32px; color: #1A1A1A; }
+  .benefits ul { list-style: none; }
+  .benefits li {
+    padding: 14px 0 14px 40px; position: relative; font-size: 19px;
+    border-bottom: 1px solid #F0F0F0;
+  }
+  .benefits li::before {
+    content: "✓"; position: absolute; left: 0; top: 12px;
+    color: #388E3C; font-weight: 800; font-size: 26px;
+  }
+
+  /* === PRODUCT DETAIL === */
+  .product-detail { background: #FFF8E1; }
+  .product-detail h2 { font-size: 30px; text-align: center; margin-bottom: 32px; }
+  .module {
+    background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px;
+    border-left: 4px solid #D32F2F;
+  }
+  .module h3 { color: #D32F2F; font-size: 22px; margin-bottom: 8px; }
+
+  /* === BONUSES === */
+  .bonuses { background: #FFFFFF; }
+  .bonuses h2 { font-size: 32px; text-align: center; margin-bottom: 32px; color: #1A1A1A; }
+  .bonus {
+    background: #FFF8E1; border: 3px dashed #FFC107;
+    border-radius: 12px; padding: 24px; margin: 16px 0;
+  }
+  .bonus-tag {
+    display: inline-block; background: #D32F2F; color: white;
+    padding: 6px 16px; border-radius: 4px; font-weight: 700; margin-bottom: 12px;
+  }
+  .bonus h3 { color: #1A1A1A; font-size: 22px; margin-bottom: 8px; }
+  .price-line { margin-top: 12px; font-size: 18px; }
+  .strike { text-decoration: line-through; color: #999; }
+  .free { color: #D32F2F; font-weight: 800; font-size: 20px; margin-left: 12px; }
+
+  /* === VALUE STACK === */
+  .value-stack-section { background: #F5F5F5; }
+  .value-stack-section h2 { font-size: 30px; text-align: center; margin-bottom: 24px; }
+  .value-stack { width: 100%; border-collapse: collapse; font-size: 19px; background: white; border-radius: 8px; overflow: hidden; }
+  .value-stack td { padding: 16px; border-bottom: 1px solid #E0E0E0; }
+  .value-stack .amount { text-align: right; font-weight: 700; }
+  .value-stack .total { background: #1A1A1A; color: white; }
+  .value-stack .total td { font-size: 22px; font-weight: 800; }
+  .value-stack .today { background: #FFD700; }
+  .value-stack .today td { font-size: 28px; font-weight: 800; color: #D32F2F; }
+  .saving { background: #FFE0B2; }
+  .saving td { font-size: 18px; font-weight: 700; color: #1A1A1A; }
+
+  /* === GUARANTEE === */
+  .guarantee-section { background: #FFFFFF; text-align: center; }
+  .badge {
+    width: 200px; height: 200px; border-radius: 50%;
+    background: radial-gradient(#FFD700, #FFC107);
+    border: 6px solid #D32F2F;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: rotate(-8deg);
+  }
+  .badge-inner { text-align: center; color: #D32F2F; font-weight: 800; font-size: 22px; transform: rotate(8deg); }
+  .guarantee-section h2 { font-size: 28px; margin-bottom: 16px; }
+  .guarantee-section p { max-width: 600px; margin: 0 auto; font-size: 18px; }
+
+  /* === COUNTDOWN === */
+  .countdown-wrapper { text-align: center; padding: 24px; background: #1A1A1A; color: white; }
+  .countdown-wrapper p { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #FFD700; }
+  .countdown { display: flex; justify-content: center; gap: 12px; }
+  .countdown > div { background: #D32F2F; color: #FFD700; padding: 16px; border-radius: 8px; min-width: 80px; text-align: center; }
+  .countdown span { font-size: 36px; font-weight: 800; display: block; }
+  .countdown label { font-size: 12px; letter-spacing: 1px; }
+
+  /* === CTA === */
+  .cta-button {
+    display: block; background: #FFD700; color: #D32F2F;
+    font-size: 26px; font-weight: 800; text-align: center;
+    padding: 24px 32px; border: 4px solid #1A1A1A; border-radius: 12px;
+    text-decoration: none; margin: 32px auto; max-width: 600px;
+    box-shadow: 0 6px 16px rgba(211, 47, 47, 0.4);
+    animation: pulse 1.8s infinite; transition: transform 0.2s;
+    text-transform: uppercase;
+  }
+  .cta-button:hover { transform: translateY(-3px); background: #FFC107; }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+  }
+  .cta-subtext { text-align: center; font-size: 15px; color: #666; margin-top: -16px; margin-bottom: 32px; }
+
+  /* === FAQ === */
+  .faq { background: #F5F5F5; }
+  .faq h2 { font-size: 30px; text-align: center; margin-bottom: 32px; }
+  .faq-item { background: white; padding: 20px; margin-bottom: 12px; border-radius: 8px; border-left: 4px solid #FFC107; }
+  .faq-item h3 { color: #D32F2F; font-size: 19px; margin-bottom: 8px; }
+
+  /* === PS === */
+  .ps-section { background: #FFF8E1; }
+  .ps-section h2 { color: #D32F2F; font-size: 26px; margin-bottom: 24px; text-align: center; }
+  .ps-section p { margin-bottom: 20px; }
+  .ps-section strong { color: #D32F2F; }
+
+  /* === FOOTER === */
+  footer { background: #1A1A1A; color: #999; text-align: center; padding: 40px 20px; font-size: 14px; }
+  footer a { color: #FFD700; text-decoration: none; }
+
+  /* === MOBILE === */
+  @media (max-width: 768px) {
+    .headline { font-size: 30px; }
+    .sub-headline { font-size: 19px; }
+    body { font-size: 17px; }
+    section { padding: 40px 16px; }
+    h2 { font-size: 24px !important; }
+    .cta-button { font-size: 19px; padding: 18px 20px; }
+    .countdown > div { min-width: 60px; padding: 10px; }
+    .countdown span { font-size: 24px; }
+    .testimonial { flex-direction: column; text-align: center; }
+    .testimonial-avatar { margin: 0 auto; }
+    .value-stack td { padding: 12px 8px; font-size: 16px; }
+    .value-stack .today td { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ URGENCY BANNER ============ -->
+<div class="urgency-banner">
+  ⏰ ƯU ĐÃI KẾT THÚC SAU: <span id="banner-countdown">--:--:--</span>
+</div>
+
+<!-- ============ BƯỚC 1+2+3: HERO (Pre-headline + Headline + Sub-headline) ============ -->
+<section class="hero">
+  <div class="container">
+    <p class="pre-headline">Dành riêng cho [ĐỐI TƯỢNG CỤ THỂ] đang [TÌNH TRẠNG CỤ THỂ]...</p>
+    <h1 class="headline">[HEADLINE CHÍNH - CÓ <em>TỪ HIGHLIGHT</em>]</h1>
+    <p class="sub-headline">[SUB-HEADLINE - mở rộng lời hứa, thêm chi tiết]</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 4: PAIN SECTION ============ -->
+<section class="pain-section">
+  <div class="container">
+    <h2>[Tiêu đề khoét đau - VD: Anh có đang ở trong tình trạng này?]</h2>
+    <p>[Đoạn 1 - Đồng cảm: "Anh đang..."]</p>
+    <p>[Đoạn 2 - Khoét hậu quả: "Nếu cứ tiếp tục..."]</p>
+    <p>[Đoạn 3 - Phá niềm tin sai: "Hầu hết mọi người nghĩ... Nhưng thực tế là..."]</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 5: GIẢI PHÁP ============ -->
+<section class="solution">
+  <div class="container">
+    <h2>Đó là lý do tôi tạo ra...</h2>
+    <h1 class="headline" style="font-size:38px;">[TÊN SẢN PHẨM]</h1>
+    <p class="sub-headline">[Mô tả 1 câu lợi ích cốt lõi]</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 6: ORIGIN STORY ============ -->
+<section class="story">
+  <div class="container">
+    <h2>Câu chuyện đằng sau [TÊN SẢN PHẨM]</h2>
+    <p>[Hook - tôi từng ở vị trí của anh/chị]</p>
+    <p>[Struggle - đã thử nhiều thứ thất bại]</p>
+    <blockquote>"[Quote thay đổi cuộc đời]"</blockquote>
+    <p>[Discovery - khoảnh khắc aha]</p>
+    <p>[Transformation - kết quả cụ thể với số liệu]</p>
+    <p>[Mission - tại sao tạo sản phẩm này]</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 7: CƠ CHẾ HOẠT ĐỘNG ============ -->
+<section class="mechanism">
+  <div class="container">
+    <h2>Tại sao [TÊN SẢN PHẨM] hoạt động hiệu quả?</h2>
+    <p>[Giải thích cơ chế cốt lõi]</p>
+    <p>[Lý do tại sao kết quả là tất yếu]</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 8: TESTIMONIALS ============ -->
+<section class="testimonials">
+  <div class="container">
+    <h2>Khách hàng đã thay đổi cuộc sống như thế nào?</h2>
+
+    <div class="testimonial">
+      <img src="[URL ẢNH 1]" alt="" class="testimonial-avatar">
+      <div>
+        <h4>[Tên - Chức danh - Địa điểm]</h4>
+        <p class="result"><strong>Trước:</strong> [tình trạng] · <strong>Sau:</strong> [kết quả]</p>
+        <blockquote>"[Lời chia sẻ chi tiết]"</blockquote>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="[URL ẢNH 2]" alt="" class="testimonial-avatar">
+      <div>
+        <h4>[Tên 2 - Chức danh - Địa điểm]</h4>
+        <p class="result"><strong>Trước:</strong> [tình trạng] · <strong>Sau:</strong> [kết quả]</p>
+        <blockquote>"[Lời chia sẻ chi tiết]"</blockquote>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="[URL ẢNH 3]" alt="" class="testimonial-avatar">
+      <div>
+        <h4>[Tên 3 - Chức danh - Địa điểm]</h4>
+        <p class="result"><strong>Trước:</strong> [tình trạng] · <strong>Sau:</strong> [kết quả]</p>
+        <blockquote>"[Lời chia sẻ chi tiết]"</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 9: BENEFITS BULLETS ============ -->
+<section class="benefits">
+  <div class="container">
+    <h2>Anh/Chị sẽ nhận được:</h2>
+    <ul>
+      <li>[Bullet 1 - dùng pattern blind bullet]</li>
+      <li>[Bullet 2]</li>
+      <li>[Bullet 3]</li>
+      <li>[Bullet 4]</li>
+      <li>[Bullet 5]</li>
+      <li>[Bullet 6]</li>
+      <li>[Bullet 7]</li>
+      <li>[Bullet 8]</li>
+      <li>[Bullet 9]</li>
+      <li>[Bullet 10]</li>
+      <li>[Bullet 11]</li>
+      <li>[Bullet 12]</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CTA #1 ============ -->
+<div class="container">
+  <a href="[LINK_MUA]" class="cta-button">[CTA TEXT - VD: ĐĂNG KÝ NGAY - NHẬN 4 BONUS]</a>
+  <p class="cta-subtext">🔒 Thanh toán an toàn · ⚡ Truy cập ngay · 💯 Hoàn tiền 30 ngày</p>
+</div>
+
+<!-- ============ BƯỚC 10: PRODUCT DETAIL ============ -->
+<section class="product-detail">
+  <div class="container">
+    <h2>Trong gói [TÊN SẢN PHẨM] có gì?</h2>
+
+    <div class="module">
+      <h3>[Module/Phần 1 - Tên]</h3>
+      <p>[Mô tả nội dung]</p>
+    </div>
+    <div class="module">
+      <h3>[Module/Phần 2 - Tên]</h3>
+      <p>[Mô tả nội dung]</p>
+    </div>
+    <div class="module">
+      <h3>[Module/Phần 3 - Tên]</h3>
+      <p>[Mô tả nội dung]</p>
+    </div>
+    <!-- Thêm module nếu cần -->
+  </div>
+</section>
+
+<!-- ============ BƯỚC 11: BONUSES ============ -->
+<section class="bonuses">
+  <div class="container">
+    <h2>🎁 Quà tặng đặc biệt - Chỉ có hôm nay</h2>
+
+    <div class="bonus">
+      <div class="bonus-tag">🎁 BONUS #1</div>
+      <h3>[Tên Bonus 1]</h3>
+      <p>[Mô tả lợi ích của bonus]</p>
+      <div class="price-line">
+        <span class="strike">Giá bán riêng: [X.XXX.XXX]đ</span>
+        <span class="free">HÔM NAY: MIỄN PHÍ</span>
+      </div>
+    </div>
+
+    <div class="bonus">
+      <div class="bonus-tag">🎁 BONUS #2</div>
+      <h3>[Tên Bonus 2]</h3>
+      <p>[Mô tả lợi ích của bonus]</p>
+      <div class="price-line">
+        <span class="strike">Giá bán riêng: [X.XXX.XXX]đ</span>
+        <span class="free">HÔM NAY: MIỄN PHÍ</span>
+      </div>
+    </div>
+
+    <div class="bonus">
+      <div class="bonus-tag">🎁 BONUS #3</div>
+      <h3>[Tên Bonus 3]</h3>
+      <p>[Mô tả lợi ích của bonus]</p>
+      <div class="price-line">
+        <span class="strike">Giá bán riêng: [X.XXX.XXX]đ</span>
+        <span class="free">HÔM NAY: MIỄN PHÍ</span>
+      </div>
+    </div>
+
+    <div class="bonus">
+      <div class="bonus-tag">🎁 BONUS #4</div>
+      <h3>[Tên Bonus 4]</h3>
+      <p>[Mô tả lợi ích của bonus]</p>
+      <div class="price-line">
+        <span class="strike">Giá bán riêng: [X.XXX.XXX]đ</span>
+        <span class="free">HÔM NAY: MIỄN PHÍ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 12: VALUE STACK ============ -->
+<section class="value-stack-section">
+  <div class="container">
+    <h2>Tổng giá trị anh/chị nhận được:</h2>
+    <table class="value-stack">
+      <tr><td>[Tên sản phẩm chính]</td><td class="amount">[XX.XXX.XXX]đ</td></tr>
+      <tr><td>BONUS #1: [Tên]</td><td class="amount">[X.XXX.XXX]đ</td></tr>
+      <tr><td>BONUS #2: [Tên]</td><td class="amount">[X.XXX.XXX]đ</td></tr>
+      <tr><td>BONUS #3: [Tên]</td><td class="amount">[X.XXX.XXX]đ</td></tr>
+      <tr><td>BONUS #4: [Tên]</td><td class="amount">[X.XXX.XXX]đ</td></tr>
+      <tr class="total"><td>TỔNG GIÁ TRỊ</td><td class="amount">[XX.XXX.XXX]đ</td></tr>
+      <tr class="today"><td>HÔM NAY CHỈ:</td><td class="amount">[X.XXX.XXX]đ</td></tr>
+      <tr class="saving"><td>TIẾT KIỆM:</td><td class="amount">[XX.XXX.XXX]đ ([XX]%)</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN ============ -->
+<div class="countdown-wrapper">
+  <p>⏰ ƯU ĐÃI KẾT THÚC SAU:</p>
+  <div class="countdown">
+    <div><span id="days">00</span><label>NGÀY</label></div>
+    <div><span id="hours">00</span><label>GIỜ</label></div>
+    <div><span id="minutes">00</span><label>PHÚT</label></div>
+    <div><span id="seconds">00</span><label>GIÂY</label></div>
+  </div>
+</div>
+
+<!-- ============ CTA #2 ============ -->
+<div class="container">
+  <a href="[LINK_MUA]" class="cta-button">[CTA TEXT]</a>
+  <p class="cta-subtext">🔒 Thanh toán an toàn · ⚡ Truy cập ngay · 💯 Hoàn tiền 30 ngày</p>
+</div>
+
+<!-- ============ BƯỚC 13: GUARANTEE ============ -->
+<section class="guarantee-section">
+  <div class="container">
+    <div class="badge">
+      <div class="badge-inner">100%<br><strong>GUARANTEE</strong><br>[X] NGÀY</div>
+    </div>
+    <h2>Cam kết hoàn tiền [X] ngày</h2>
+    <p>[Nội dung cam kết chi tiết - chọn 1 trong 3 mức Cơ bản/Mạnh/Điên rồ]</p>
+  </div>
+</section>
+
+<!-- ============ FAQ (Tùy chọn) ============ -->
+<section class="faq">
+  <div class="container">
+    <h2>Câu hỏi thường gặp</h2>
+    <div class="faq-item">
+      <h3>[Câu hỏi 1]?</h3>
+      <p>[Trả lời]</p>
+    </div>
+    <div class="faq-item">
+      <h3>[Câu hỏi 2]?</h3>
+      <p>[Trả lời]</p>
+    </div>
+    <div class="faq-item">
+      <h3>[Câu hỏi 3]?</h3>
+      <p>[Trả lời]</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 14+15: SCARCITY + CTA #3 ============ -->
+<section style="background:#FFF8E1; text-align:center;">
+  <div class="container">
+    <h2 style="font-size:30px; color:#D32F2F;">⚠ Chỉ còn [X] suất ưu đãi</h2>
+    <p style="font-size:19px; margin: 16px 0;">Sau khi hết [X] suất, giá sẽ tăng từ [X.XXX.XXX]đ lên [XX.XXX.XXX]đ và 4 bonus sẽ KHÔNG còn áp dụng.</p>
+    <a href="[LINK_MUA]" class="cta-button">[CTA TEXT]</a>
+    <p class="cta-subtext">🔒 Thanh toán an toàn · ⚡ Truy cập ngay · 💯 Hoàn tiền 30 ngày</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 16: P.S. ============ -->
+<section class="ps-section">
+  <div class="container">
+    <h2>Một số điều cuối cùng...</h2>
+    <p><strong>P.S.</strong> Nhớ rằng [nhắc lại lợi ích #1 + cam kết]</p>
+    <p><strong>P.P.S.</strong> [Nhắc bonus + scarcity]</p>
+    <p><strong>P.P.P.S.</strong> [Push cuối - mỗi ngày trôi qua không có sản phẩm = ...]</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <p>© 2026 [Tên công ty] · [Địa chỉ]</p>
+  <p>Hotline: <a href="tel:[SDT]">[SDT]</a> · Zalo: <a href="[ZALO_LINK]">[SDT]</a></p>
+</footer>
+
+<!-- ============ COUNTDOWN SCRIPT ============ -->
+<script>
+// COUNTDOWN DEADLINE - Sửa ngày giờ ở đây (format: YYYY-MM-DDTHH:MM:SS+07:00)
+const deadline = new Date("2026-12-31T23:59:59+07:00").getTime();
+
+function updateCountdown() {
+  const now = Date.now();
+  const distance = deadline - now;
+
+  if (distance < 0) {
+    document.querySelectorAll('#days, #hours, #minutes, #seconds').forEach(el => el.textContent = '00');
+    document.getElementById('banner-countdown').textContent = 'ĐÃ KẾT THÚC';
+    return;
+  }
+
+  const days = Math.floor(distance / 86400000);
+  const hours = Math.floor((distance % 86400000) / 3600000);
+  const minutes = Math.floor((distance % 3600000) / 60000);
+  const seconds = Math.floor((distance % 60000) / 1000);
+
+  document.getElementById('days').textContent = String(days).padStart(2,'0');
+  document.getElementById('hours').textContent = String(hours).padStart(2,'0');
+  document.getElementById('minutes').textContent = String(minutes).padStart(2,'0');
+  document.getElementById('seconds').textContent = String(seconds).padStart(2,'0');
+
+  document.getElementById('banner-countdown').textContent =
+    String(days).padStart(2,'0') + 'd ' +
+    String(hours).padStart(2,'0') + 'h ' +
+    String(minutes).padStart(2,'0') + 'm ' +
+    String(seconds).padStart(2,'0') + 's';
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
+
+</body>
+</html>

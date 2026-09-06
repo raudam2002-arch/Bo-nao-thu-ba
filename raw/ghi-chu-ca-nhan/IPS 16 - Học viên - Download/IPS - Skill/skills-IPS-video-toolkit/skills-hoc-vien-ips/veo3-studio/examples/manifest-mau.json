@@ -1,0 +1,30 @@
+{
+  "project": "ten-du-an-slug",
+  "backend": "gemini",
+  "defaults": {
+    "aspect": "9:16",
+    "duration": 8,
+    "resolution": "720p",
+    "audio": false,
+    "model": "quality",
+    "negative": "text, watermark, logo, blurry, distorted face"
+  },
+  "scenes": [
+    {
+      "id": "01-hook",
+      "prompt": "Slow push in on a lone figure standing at the edge of a cliff at dawn, silhouetted against amber sky, wind moving through clothing, cinematic, warm golden light, shallow depth of field",
+      "refs": ["./refs/nhan-vat-chinh.png"]
+    },
+    {
+      "id": "02-noi-dung",
+      "prompt": "Static camera, the same figure turning slowly toward camera, determined expression, first sunlight hitting the face, warm golden light, consistent amber palette",
+      "refs": ["./refs/nhan-vat-chinh.png"],
+      "seed": 42
+    },
+    {
+      "id": "03-ket",
+      "prompt": "Crane up revealing vast mountain landscape below the cliff, tiny figure at the edge, sea of clouds, golden hour, epic scale, same warm palette",
+      "duration": 6
+    }
+  ]
+}

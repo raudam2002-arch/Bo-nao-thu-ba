@@ -1,0 +1,22 @@
+[
+  {"query": "anh có concept page về '5 cái chết tư duy', lên cho anh 1 bài đăng fanpage tối nay sao cho nhiều người share", "should_trigger": true},
+  {"query": "viết giúp anh bài facebook thật cảm động về 1 anh doanh nhân bỏ bê gia đình rồi tỉnh ngộ, kiểu kéo được nước mắt người đọc ấy", "should_trigger": true},
+  {"query": "bài này anh đăng mãi mà chả ai share, xem hộ vì sao nó không lan rồi sửa giúp anh", "should_trigger": true},
+  {"query": "chấm bài dưới đây xem có viral không nhé, xong viết lại cái mở bài cho nó cuốn hơn", "should_trigger": true},
+  {"query": "anh cần 1 cái post ngắn câu tương tác cho page, chủ đề trì hoãn chờ đúng thời điểm, dưới 500 chữ", "should_trigger": true},
+  {"query": "biến câu chuyện ông chủ quán phở 20 năm chuyển sang bán online này thành 1 bài viral kể chuyện kinh doanh", "should_trigger": true},
+  {"query": "làm cho anh cái hook 3 giây mở đầu reel về chủ đề mất hết tiền rồi đứng dậy, sao cho không ai lướt qua", "should_trigger": true},
+  {"query": "hồi xưa bố anh hay hất mâm cơm, anh muốn viết thành 1 bài chia sẻ trên trang để nhiều người đồng cảm và chia sẻ", "should_trigger": true},
+  {"query": "anh muốn 1 bài storytelling chạm tới mấy chủ doanh nghiệp đang kiệt sức, để họ tự nhận ra mình rồi tự share đi", "should_trigger": true},
+  {"query": "viết caption facebook tăng comment cho tấm hình anh đứng lớp hôm qua, kiểu kể chuyện chạm cảm xúc chứ đừng khô", "should_trigger": true},
+  {"query": "viết sale page bán khoá Bán Hàng Thành Công full 16 bước, có countdown urgency với bảng giá early bird", "should_trigger": false},
+  {"query": "viết bài LTVM kể về chị Quyên học viên khoá Lập Trình Vận Mệnh 14, chị bị trầm cảm sau sinh, áp dụng Bản đồ cuộc đời", "should_trigger": false},
+  {"query": "lên kịch bản video marketing 12 phút giới thiệu hệ thống IPS, quay theo lộ trình 28 ngày", "should_trigger": false},
+  {"query": "viết tiếp chương 52 truyện Gã Ăn Mày Giàu Có, lần này gã gặp ông chủ tiệm vàng đang phá sản", "should_trigger": false},
+  {"query": "viết bài thuyết trình 30 giây giới thiệu nghề luật sư sở hữu trí tuệ của anh để đi BNI lấy lời giới thiệu", "should_trigger": false},
+  {"query": "cắt cái file transcript SRT khoá Eagle Camp này thành chunk 15k ký tự để xử lý tiếp vòng 2", "should_trigger": false},
+  {"query": "đọc 500 comment YouTube này rồi tổng hợp hồ sơ khách hàng persona cho khoá DTSGC giúp anh", "should_trigger": false},
+  {"query": "viết cho anh công thức nấu món bún bò Huế chuẩn vị đăng blog, chuẩn SEO luôn", "should_trigger": false},
+  {"query": "soạn module giáo án chuẩn hoá về khái niệm Sự gán nghĩa để đưa vào thư viện kiến thức PTL, xuất docx", "should_trigger": false},
+  {"query": "viết kịch bản phim ngắn dọc 60 tập về một founder bị cướp công ty rồi trả thù, kiểu ReelShort", "should_trigger": false}
+]
